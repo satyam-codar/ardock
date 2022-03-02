@@ -1,0 +1,135 @@
+/* -----------------------contfirst ------------------------- */
+.contfirst{
+    padding: 100px 0px 0px 0px;
+    background-color: #E3E4E6;
+}
+
+.contfirst .contfirstrow .contactform{
+    margin: 100px 0px 0px 0px;
+    /* text-align: center; */
+}
+.contfirst .contfirstrow .contactform h1{
+    margin-left: 40px;
+    font-size: 50px;
+    font-weight: 600;
+    color: #3a143f;
+}
+
+.contfirst .image{
+    width: 100%;
+    height: 650px;
+    /* border: 1px solid red; */
+    overflow: hidden;
+}
+.contfirst .image img{
+    width: 120%;
+    height: auto;
+    margin-left: -60px;
+    /* scale: 1.2; */
+}
+
+.upr2{
+    /* border: 1px solid rgb(25, 0, 255); */
+    width: 100%;
+    /* width: 400px; */
+}
+
+.upr1{
+    background-color: #E3E4E6;
+    width: 100%;
+}
+.upr form input{
+    color: #3a143f;
+    font-size: 20px;
+}
+
+/* -------------------------------contactseccontent---------------------- */
+.contactseccontent{
+    display: flex;
+    flex-direction: row;
+    /* text-align: center; */
+    max-height: 75vh;
+    overflow: hidden;
+}
+.contactseccontent .flexcontentone{
+    order: 1;
+    flex: 1 1 70%;
+    background-color: #1B1612;
+    color: #F1C50E;
+}
+.contactseccontent .flexcontenttwo{
+    order: 2;
+    flex: 1 1 30%;
+}
+.contactseccontent .flexcontenttwo img{
+    margin: -100px 0px 0px 0px;
+}
+
+.contactseccontent .flexcontentone{
+    padding: 250px 0px 150px 200px;
+}
+.contactseccontent .flexcontentone h2{
+    /* padding: 100px 0px; */
+    color: #F1C50E;
+    font-weight: 600;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.contactseccontent .flexcontentone h1{
+    /* padding: 100px 0px; */
+    color: #F1C50E;
+    font-size: 70px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.contactsecond Button{
+    /* height: 25px; */
+    height: 4rem;
+    font-size: 15px;
+    border: 1px solid;
+    border-radius: 0px;
+    padding: 1px 20px;
+    /* border-color: #B1363E; */
+    border-color: white ;
+    background-color: #F1C50E;
+    color: white;
+}
+
+.contactsecond button:hover{
+    background-color: #B1363E;
+    border-color: #B1363E ;
+}
+
+@media (max-width: 800px) {
+  .contactseccontent {
+    flex-direction: column;
+  }
+}
+
+/* ---------------------------------contactmap--------------------- */
+.contactmap{
+    background-color: #292C33;
+    height: 80vh;
+    text-align: center;
+}
+.contactmap .contflex{
+    display: flex;
+    flex-direction: row;
+}
+.contactmap .contdetails{
+    order: 1;
+    flex: 1 1 70%;
+    background-color: #1B1612;
+    color: #F1C50E;
+}
+.contactmap .contmap{
+    order: 2;
+    flex: 1 1 30%;
+}
+
+
+@media (max-width: 800px) {
+  .contactmap .contflex {
+    flex-direction: column;
+  }
+}

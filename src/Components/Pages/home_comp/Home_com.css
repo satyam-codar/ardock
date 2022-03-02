@@ -1,0 +1,198 @@
+.home_first{
+    height: 80vh;
+    /* border: 1px solid rgb(206, 90, 90); */
+}
+
+.fur_home{
+    /* border: 1px solid rgb(197, 19, 19); */
+    /* height: 80vh; */
+    padding: 150px 0px 50px 0px;
+}
+.fur_home .first_content{
+    margin-top: 50px;
+}
+
+.fur_home h1{
+    font-size: 60px;
+
+}
+
+.fur_home h2{
+    color: #5a7184;
+    font-weight: 400;
+    /* font-size: 20px; */
+}
+
+.first_home_button{
+    margin: 40px 20px;
+}
+
+
+.home_first .fur_home Button{
+    height: 5.5rem;
+    font-size: 18px;
+    border: 1px solid;
+    border-radius: 55px;
+    padding: 10px 30px;
+}
+
+.fur_home .first_image img{
+
+    /* border: 1px solid rgb(89, 89, 165); */
+    width: 100%;
+    height: auto;
+    /* margin-bottom: 40px; */
+    /* padding-top: -40px; */
+}
+.fur_home .first_image{
+    /* border: 1px solid blue; */
+    /* padding-bottom: 50px ; */
+}
+
+/* ------------------------HOME SECOND------------------------ */
+.courses{
+    /* border: 1px solid green; */
+    height: 90vh;
+    position: relative;
+    padding-top: 80px;
+    background-color: rgb(199, 203, 206);
+    padding-bottom: 150px;
+}
+
+.courses h1{
+    margin: 10px auto 40px auto;
+    text-align: center;
+    font-size: 50px;
+    /* border: 1px solid brown; */
+}
+.back_image{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 90vh;
+    overflow: hidden;
+}
+.back_image img{
+    opacity: 0.4;
+    width: 100%;
+}
+
+
+
+/* -------------------------------why us ---------------------------- */
+
+.whyus{
+    padding: 100px 0px;
+    text-align: center;
+    color: #2F2D52;
+    border: 1px solid blue;
+}
+.whyus h1{
+    font-size: 50px;
+}
+
+.whyus p{
+    font-size: 15px;
+}
+
+.whyus .bulltex{
+    text-align: center;
+    padding: 50px;
+
+}
+.whyus .bulltex .ico{
+    width: 90px ;
+    height: 90px ;
+    max-width: 150px;
+    max-height: 150px;
+    margin: 50px auto 20px auto;
+    border-radius: 50%;
+    /* vertical-align: middle; */
+} 
+
+.whyus .bulltex .ora{
+    padding-top: 7px;
+    border: 3px solid #F3DFBD;
+    /* background-color: #F3DFBD; */
+
+}
+.whyus .bulltex .blu{
+    border: 3px solid #DAD4FF;
+    padding-top: 10px;
+}
+.whyus .bulltex .gre{
+    border: 3px solid #AFF5DC;
+    padding-top: 10px;
+}
+
+/* ---------------------------contact--------------------------- */
+.contact{
+    margin: 200px auto 150px auto;
+    background-color: #3d3b79;
+    /* background-color: #FF693E; */
+    border-radius: 10px;
+    padding: 100px 50px 70px 50px;
+    color: white;
+    position: relative;
+}
+
+.contact h1{
+    font-size: 50px;
+}
+.contact p{
+    font-size: 17px;
+    margin-top: 10px;
+}
+.contact .buttonu{
+    margin: 20px auto 10px auto;
+}
+
+.contact Button{
+    height: 5.5rem;
+    font-size: 18px;
+    border: 1px solid;
+    border-radius: 15px;
+    padding: 10px 30px;
+    background-color: #090761;
+    color: white;
+}
+.contact button:hover{
+    background-color: #14125a;
+    border-color: #14125a ;
+}
+.contact .teaching{
+    position:absolute;
+    bottom:0;
+    right: 8%;
+    margin:auto;
+    /* margin-top: 10px; */
+    /* padding-top: 20px; */
+}
+
+/* -------------------------parents corner -------------------------- */
+.parents{
+    padding:100px 0px;
+    margin: 100px;
+    border: 1px solid brown;
+}
+.parents .cont{
+    position: relative;
+    min-height: 300px;
+    /* background-image: url("/src/Image/frame.png"); */
+    /* padding: 70px 0px 80px 0px;
+    margin: 0px 0px 0px 0px;
+    width: 100%;
+    height: 100%; */
+    /* color: rgb(92, 30, 30); */
+}
+.parents .cont .contimage img{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.parents h1{
+    font-size: 50px;
+    color: #2F2D52;
+    text-align: center;
+    /* border: 1px solid red; */
+}
