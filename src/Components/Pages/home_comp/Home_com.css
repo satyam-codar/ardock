@@ -6,15 +6,25 @@
 .fur_home{
     /* border: 1px solid rgb(197, 19, 19); */
     /* height: 80vh; */
-    padding: 150px 0px 50px 0px;
+    padding: 100px 0px 50px 0px;
 }
 .fur_home .first_content{
     margin-top: 50px;
 }
 
-.fur_home h1{
-    font-size: 60px;
-
+.fur_home .first{
+    /* font-size: 60px; */
+    margin-bottom: 0px;
+    font-size: 100px;
+    font-weight: 900;
+    color: #3A143F;
+}
+.fur_home .second{
+    margin-top: -20px;
+    /* font-size: 60px; */
+    text-transform: capitalize;
+    font-size: 80px;
+    font-weight: 500;
 }
 
 .fur_home h2{
@@ -35,20 +45,82 @@
     border-radius: 55px;
     padding: 10px 30px;
 }
+.home_first .fur_home .butoutlined{
+    color: white;
+    background-color: #3A143F;
+}
 
 .fur_home .first_image img{
-
     /* border: 1px solid rgb(89, 89, 165); */
-    width: 100%;
-    height: auto;
+    width: 540px;
+    height: 540px;
     /* margin-bottom: 40px; */
     /* padding-top: -40px; */
 }
 .fur_home .first_image{
+    /* background-image: url("/src/Image/blob.svg"); */
+    /* background-size: 600px 600px; */
+    /* border: 1px solid red; */
+    /* height: 100%; */
+    /* height: 40vh; */
+    /* position: relative; */
+    /* background-size: 100%; */
     /* border: 1px solid blue; */
     /* padding-bottom: 50px ; */
+    /* height: 20vh; */
+}
+/* .fur_home .relback{
+    position: absolute;
+
+} */
+
+
+.fur_home .first_image .childimage{
+    border: 1px solid;
+    width: 540px;
+    height: 540px;
+    background-size: auto 600px;
+    /* background-position: -50% -50%; */
+    background-image: url("/src/Image/children.jpg");
+    border-radius: 50%;
+    overflow: hidden;
 }
 
+
+
+/* --------------------------home sec comp-------------------------- */
+.homeseccomp{
+    /* background-color: #E5E5E5; */
+    /* background-color: #43256F; */
+    margin: 50px auto 10px auto;
+    background-color: rgba(67, 37, 111,0.4);
+    padding: 50px 0px;
+}
+.homeseccomp .homeseccomptext{
+    margin: 20px 10px;
+}
+.homeseccomp .homeseccomptext p{
+    font-size: 18px;
+    font-weight: 400;
+}
+.homeseccomp .homeseccompheading{
+    display: block;
+    width: 80%;
+    margin: 20px auto;
+}
+.homeseccomp .homeseccompheading h2{
+    font-size: 30px;
+    font-weight: 600;
+}
+.homeseccomp .homeseccompheading h2::before{
+    display: block;
+    content: " ";
+    width: 70%;
+    height: 8px;
+    margin: 10px 0px;
+    background-color: #3A143F;
+
+}
 /* ------------------------HOME SECOND------------------------ */
 .courses{
     /* border: 1px solid green; */
@@ -82,10 +154,10 @@
 /* -------------------------------why us ---------------------------- */
 
 .whyus{
-    padding: 100px 0px;
+    padding: 50px 0px;
     text-align: center;
     color: #2F2D52;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 .whyus h1{
     font-size: 50px;
@@ -113,6 +185,7 @@
 .whyus .bulltex .ora{
     padding-top: 7px;
     border: 3px solid #F3DFBD;
+    /* border: 3px solid #F3DFBD; */
     /* background-color: #F3DFBD; */
 
 }
@@ -125,9 +198,206 @@
     padding-top: 10px;
 }
 
+/* ---------------------------------homecourse------------------------ */
+.homecourse{
+    background-color: #43256F;
+    /* height: 80vh; */
+    padding: 30px 0px;
+}
+
+.homecourse h2{
+    color: #F2BB4F;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+.homecourse h1{
+    color: #ffffff;
+    font-size: 40px;
+    margin: 15px 0px;
+    font-weight: 500;
+    text-align: center;
+}
+.homecourse h1::after{
+    display: block;
+    content: " ";
+    background-color: #F2BB4F;
+    width: 20%;
+    margin: 15px auto;
+    height: 6px;
+}
+
+
+/* ---------------------card ---------------------- */
+.homecourse .cardmedia{
+    margin: 5% auto;
+    height: 230px;
+    width: 90%;
+}
+.maincard{
+    background-color: #634491 !important;
+}
+.maincard1{
+    /* border: 1px solid rgb(0, 255, 42); */
+}
+.cardheading{
+    font-size: 35px !important;
+    text-transform: capitalize;
+    color: #F1BB51;
+    text-align: left !important;
+}
+.homecourse .para{
+    text-align: left !important;
+    color: white;
+    font-size: 16px !important;
+    font-weight: 300 !important;
+    font-style: italic;
+}
+.homecourse .cardbutton{
+  height: 4rem;
+  font-size: 15px;
+  border: 1px solid;
+  border-radius: 0px;
+  margin: 0px 10px 10px 10px;
+  padding: 1px 20px;
+  border-color: white;
+  background-color: #F1BB51;
+  color: white;
+}
+
+.homecourse .cardbutton:hover {
+  background-color: white;
+  border-color: #43256F ;
+  color: #43256F;
+}
+
+.homecourse .cardpart{
+    margin: 50px 0px;
+}
+
+
+/* ---------------------------homesmall description ------------------- */
+.homesmalldes{
+    min-height: 90vh;
+    margin: 80px 0px;
+}
+.homesmalldes .firsthead{
+    text-align: center;
+    margin: 50px 0px;
+    color: #2f2d52;
+    font-size: 50px;
+    font-weight: 600;
+}
+.homesmalldes .smalldescont{
+    width: 70%;
+    margin: 50px auto;
+}
+.homesmalldes .smalldescont h1{
+    font-size: 25px;
+    font-weight: 500;
+}
+.homesmalldes .smalldescont p{
+    margin: 20px 0px;
+    font-size: 17px;
+}
+.homesmalldes .smalldesimg{
+    width: 300px;
+    height: 300px;
+    margin: 30px auto;
+    border: 15px solid #634491;
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden;
+    /* position: relative; */
+}
+.glue{
+    /* border: 1px solid brown; */
+}
+
+.homesmalldes .smalldesimg img{
+    /* position: absolute; */
+    /* border: 1px solid red; */
+    /* left: 40%; */
+    /* left: 60%; */
+    width: auto;
+    height: 100%;
+    /* max-width: 300px; */
+    max-height: 100%;
+}
+/* ----------------------------accordian--------------------- */
+.homeaccor .heading{
+    text-align: center;
+}
+.homeaccor .homeaccordian{
+    margin: 30px auto;
+}
+.typeheading{
+    font-size: 17px !important;
+    font-weight: 500 !important;
+}
+.typepara{
+    font-size: 15px !important;
+    margin: 0px 15px !important;
+}
+.typedetail{
+    border-left: 6px solid !important;
+    border-bottom: #43256F !important;
+    /* font-size: 15px !important;
+    margin: 0px 15px !important; */
+}
+
+
+/* -----------------------------homeplan------------------------- */
+.homeplan{
+    /* height: 50vh; */
+    margin: 100px 0px;
+    text-align: center;
+    background-color: #43256F;
+    padding: 100px 0px 50px 0px;
+    background-image: linear-gradient(0deg, rgba(67, 37, 111,0.9), rgba(67, 37, 111,0.9)), url("/src/Image/grt.jpg");
+    /* background-image: url("/src/Image/grt.jpg"); */
+    background-position: 50% 50%;
+}
+.homeplan h2{
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #F2BB4F;
+    /* color: white; */
+}
+.homeplan h1{
+    font-size: 120px;
+    font-weight: 700;
+    color: white;
+    /* color: #F2BB4F; */
+}
+.homeplan p{
+    color: #F2BB4F;
+    font-size: 20px;
+    margin: 0px auto;
+}
+.homeplan .cardbutton{
+  height: 4.4rem;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border: 1px solid;
+  border-radius: 0px;
+  margin: 50px auto 10px auto;
+  padding: 1px 30px;
+  border-color: white;
+  background-color: #F1BB51;
+  color: white;
+}
+
+.homeplan .cardbutton:hover {
+  background-color: white;
+  border-color: #43256F ;
+  color: #43256F;
+}
+
 /* ---------------------------contact--------------------------- */
 .contact{
-    margin: 200px auto 150px auto;
+    margin: 150px auto 80px auto;
     background-color: #3d3b79;
     /* background-color: #FF693E; */
     border-radius: 10px;
@@ -167,32 +437,4 @@
     margin:auto;
     /* margin-top: 10px; */
     /* padding-top: 20px; */
-}
-
-/* -------------------------parents corner -------------------------- */
-.parents{
-    padding:100px 0px;
-    margin: 100px;
-    border: 1px solid brown;
-}
-.parents .cont{
-    position: relative;
-    min-height: 300px;
-    /* background-image: url("/src/Image/frame.png"); */
-    /* padding: 70px 0px 80px 0px;
-    margin: 0px 0px 0px 0px;
-    width: 100%;
-    height: 100%; */
-    /* color: rgb(92, 30, 30); */
-}
-.parents .cont .contimage img{
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-.parents h1{
-    font-size: 50px;
-    color: #2F2D52;
-    text-align: center;
-    /* border: 1px solid red; */
 }

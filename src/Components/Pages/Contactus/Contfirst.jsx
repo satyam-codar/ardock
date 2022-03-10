@@ -10,7 +10,6 @@ function Contfirst() {
                         <div className="col-sm-6 col-md-6 col-lg-6">
                             <div className="image">
                                 <img src="/Images/contactman.png" alt="" />
-
                             </div>
                         </div>
                         <div className="col-sm-6 col-md-6 col-lg-6">

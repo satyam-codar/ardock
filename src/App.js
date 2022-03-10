@@ -10,19 +10,24 @@ import Aboutus from './Components/Pages/Aboutus';
 import Footer from './Components/Footer/Footer';
 import Contactus from './Components/Pages/Contactus';
 
+
+import "./Components/Scrollkey/Scrollkey.css"
+import Ourteam from './Components/Pages/Ourteam';
+import Courses from './Components/Pages/Courses';
+
 function App() {
     return (
+      <div className="scrollbar scrollbar-night-fade">
       <Router>
         <Navbar />
         <Switch>
           {/* <UseEffectScroll> */}
-          
           <Route exact path="/" component={Home} />
           <Route path="/About" component={Aboutus} />
           <Route path="/Contactus" component={Contactus} />
-          {/* <Route path="/Faculty" component={Faculty} />
-          <Route path="/Tradepage" component={Tradepage} />
-          <Route path="/Resultspage" component={Resultspage} />
+          <Route path="/ourteam" component={Ourteam} />
+          <Route path="/Courses" component={Courses} />
+          {/* <Route path="/Resultspage" component={Resultspage} />
           <Route path="/Gallerypage" component={Gallerypage} />
           <Route path="/Contactus" component={Contactus} /> */}
           {/* <Route exact path="/Login" component={Login} /> */}
@@ -35,6 +40,7 @@ function App() {
         {/* <Footer /> */}
         {/* <Productcomp/> */}
       </Router>
+      </div>
     );
 }
 

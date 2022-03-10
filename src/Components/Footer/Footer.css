@@ -1,15 +1,28 @@
 .footers {
-  border: 1px solid blue;
-  margin-top: 50px;
-  padding: 80px 0px 20px 0px;
-  color: #2f2d52;
+  /* border: 1px solid blue; */
+  /* margin-top: 50px; */
+  padding: 50px 0px 20px 0px;
+  /* color: #2f2d52; */
+  color: #ffffff;
+  background-color: rgba(67, 37, 111,0.9);
+  /* background-color: rgba(85, 58, 125,0.65); */
+  /* background-color: #553A7D; */
   
 }
 
 .footers h1 {
     font-size: 30px;
+    font-weight: 600;
     text-transform: capitalize;
   /* margin-top: 300px; */
+}
+.footers h1::after{
+    display: block;
+    content: " ";
+    width: 40%;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 5px 0px;
 }
 .footers .links{
     margin-top: 25px;
@@ -17,7 +30,8 @@
 }
 .footers h3{
     margin-left: 30px;
-    color: #53577a;
+    color: #ffffff;
+    /* color: #53577a; */
     margin: 10px auto;
     line-height: 25px;
 }

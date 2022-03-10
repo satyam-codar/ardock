@@ -1,0 +1,236 @@
+.coursesfirstw{
+    height: 60vh;
+    background-image: url("/src/Image/courses.jpg");
+    background-position-y: 0%;
+    padding: 100px 0px;
+}
+.coursesfirstw h2{
+    margin: 200px 0px 10px 0px;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 500;
+}
+.coursesfirstw h1{
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+
+.coursesfirstw .first_course_button Button{
+    margin: 0px 0px;
+    height: 5.5rem;
+    font-size: 18px;
+    border: 1px solid;
+    border-radius: 55px;
+    padding: 10px 30px;
+}
+.coursesfirstw .first_course_button .butoutlined{
+    color: #ffffff;
+    background-color: #3A143F;
+    /* background-color: #3A143F; */
+}
+.coursesfirstw .first_course_button .butoutlined:hover{
+    color: #3A143F;
+    background-color: #ffffff;
+}
+
+
+
+
+/* .coursesfirstw button {
+  height: 4rem;
+  font-size: 15px;
+  border: 1px solid;
+  border-radius: 0px;
+  padding: 1px 20px;
+  border-color: white;
+  background-color: #43256F;
+  color: black }
+; */
+
+/* .coursesfirstw button:hover{
+    border-color: #43256F;
+  background-color: #B1363E ;
+} */
+
+/* ---------------------couursesecond------------------------- */
+.coursessecond{
+    /* background-color: #F2F2F2; */
+    /* height: 100vh; */
+    padding: 30px;
+}
+.coursessecond .uppertext{
+    text-align: center;
+}
+.coursessecond .uppertext h2{
+    margin: 50px 0px 20px 0px;
+    font: 20px;
+    font-weight: 500;
+    letter-spacing: 5px;
+}
+.coursessecond .uppertext h1{
+    font-size: 70px;
+    font-weight: 800;
+}
+.coursessecond .uppertext p{
+    font-size: 21px;
+    margin: 20px 0px;
+    font-weight: 300;
+}
+
+.coursessecond .first_course_button{
+    margin: 10px 0px;
+}
+
+.coursessecond .first_course_button Button{
+    margin: 0px auto;
+    height: 5.5rem;
+    font-size: 18px;
+    border: 1px solid;
+    border-radius: 55px;
+    padding: 10px 30px;
+}
+.coursessecond .first_course_button .butoutlined{
+    color: white;
+    background-color: #3A143F;
+}
+.coursessecond .first_course_button .butoutlined:hover{
+    color: #3A143F;
+    background-color: #ffffff;
+}
+
+
+.coursessecond .allcourses{
+    margin: 10px 0px;
+}
+.coursessecond .allcourses .gullu{
+    height: 200px;
+    /* border: 1px solid green; */
+}
+
+.coursessecond .rahubi{
+    /* border: 1px solid brown; */
+}
+
+
+/* ---------------------card ---------------------- */
+.maincard2{
+    background-color: #634491 !important;
+    /* margin-top: 50px; */
+    margin: 50px auto 0px auto;
+    /* border: 1px solid red; */
+    width: 500px !important;
+    /* height: 500px !important; */
+    transition:all ease-in-out  0.2s !important;
+}
+.maincard2:hover{
+    transform: scale(1.05);
+}
+.maincard3{
+    width: 80%;
+    /* height: 80%; */
+    border: 1px solid rgb(0, 255, 42);
+}
+.coursessecond .cardmedia{
+    /* margin: 5% auto; */
+    height: 180px;
+    /* width: 90%; */
+}
+.starrating{
+    color: white;
+    margin: 10px 0px;
+    font-size: 15px;
+}
+.starrating1{
+    color: white;
+    margin: 10px 0px 0px 0px;
+    font-size: 15px;
+    /* display: none; */
+    /* opacity: 1; */
+    /* transition: opacity 1s !important; */
+    transition:all ease-in-out  1s !important;
+}
+/* .maincard2:hover .starrating1{
+    display: block;
+    opacity: 1;
+} */
+
+.cardheading{
+    font-size: 35px !important;
+    text-transform: capitalize;
+    color: #F1BB51;
+    text-align: left !important;
+}
+.author{
+    color: white;
+    font-size: 18px;
+    text-align: right;
+    margin-right: 15px;
+}
+.coursessecond .para2{
+    text-align: left !important;
+    color: white;
+    font-size: 16px !important;
+    font-weight: 300 !important;
+    font-style: italic;
+}
+/* .coursessecond .cardbutton{
+  height: 4rem;
+  font-size: 15px;
+  border: 1px solid;
+  border-radius: 0px;
+  margin: 0px 10px 10px 10px;
+  padding: 1px 20px;
+  border-color: white;
+  background-color: #F1BB51;
+  color: white;
+}
+
+.coursessecond .cardbutton:hover {
+  background-color: white;
+  border-color: #43256F ;
+  color: #43256F;
+} */
+
+.coursessecond .cardaction{
+    height: 7rem;
+    background-color: #64498d;
+    /* border: 1px solid white; */
+}
+.coursessecond .cardaction .price{
+    /* border: 1px solid red; */
+    /* text-align: center; */
+    width: 20%;
+    color: white;
+    font-size: 28px;
+    margin-left: 10px;
+}
+.coursessecond .first_course_button1{
+    width: 80%;
+    padding-right: 15px;
+    /* margin: 0px auto 0px auto; */
+    /* align-items: flex-end; */
+    /* text-align: right; */
+    /* float: right; */
+    /* align-items: right; */
+    /* float: right; */
+    /* text-align: right; */
+    /* border: 1px solid white; */
+}
+
+.coursessecond .first_course_button1 Button{
+    /* align-items: left; */
+    margin: 0px 0 0px auto;
+    height: 4.2rem;
+    font-size: 15px;
+    border: 1px solid;
+    border-radius: 55px;
+    padding: 5px 25px;
+}
+.coursessecond .first_course_button1 .butoutlined{
+    color: white;
+    /* background-color: #3A143F; */
+    background-color: #46264b;
+}

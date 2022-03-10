@@ -15,22 +15,21 @@ export class Home_first extends Component {
               <div className="row">
                 <div className="col-md-6 col-lg-6 col-xl-6">
                   <div className="first_content">
-
-                    <h1>
-                      Foundation for <br /> early childhood education
+                    <h1 className="first">
+                      Ardock
+                    </h1>
+                    <h1 className="second"> 
+                    foundations
                     </h1>
                     <h2>
-                      Environment to explore, crete and learn best through play
+                      Ullamcorper malesuada proin libero nunc. Id semper risus in hendrerit gravida. Vulputate  sagittis aliquam malesuada bibendum. 
                     </h2>
                     <div className="first_home_button">
                       <Stack direction="row" spacing={2}>
-                        <Button color="secondary">
+                        <Button className="butoutlined"  color="secondary">
                           Book free trial
                         </Button>
-                        {/* <Button variant="contained" color="success">
-                      Success
-                    </Button> */}
-                        <Button variant="outlined" color="error">
+                        <Button variant="outlined" color="secondary">
                           Contact Us
                         </Button>
                       </Stack>
@@ -39,7 +38,12 @@ export class Home_first extends Component {
                 </div>
                 <div className="col-md-6 col-lg-6 col-xl-6">
                   <div className="first_image">
-                    <img src="images/camera.png" alt="" />
+                    {/* <div className="relback">
+                      <img src="/Images/blob.svg" alt="" />
+                    </div> */}
+                    <div className="childimage">
+                      {/* <img src="images/children.jpg" alt="" /> */}
+                    </div>
                   </div>
                 </div>
               </div>

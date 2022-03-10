@@ -110,7 +110,8 @@ html {
   bottom: -0.7rem;
   border-radius: 3px;
   height: 4px;
-  background-color: #ffeb00;
+  /* background-color: #ffeb00; */
+  background-color: #3A143F;
   transition: all .3s ease-in-out 0s;
 }
 
