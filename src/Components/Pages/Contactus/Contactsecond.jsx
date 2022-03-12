@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
+
 
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
@@ -17,7 +19,7 @@ function Contactsecond() {
                 <div className="firstbut">
                     <Stack direction="row" spacing={2}>
                         <Button color="secondary">
-                            Read more
+                                <Link to='/About'>Read more</Link>
                         </Button>
                     </Stack>
                 </div>

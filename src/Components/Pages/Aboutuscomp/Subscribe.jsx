@@ -25,7 +25,6 @@ function Subscribe() {
                         </div>
                         <div className="col-md-6 col-sm-12 col-lg-6">
                             <div className="formbox">
-
                                 <Box
                                     component="form"
                                     sx={{
@@ -38,18 +37,25 @@ function Subscribe() {
                                     <Button type="submit" variant="contained">Subscribe</Button>
                                 </Box>
                             </div>
-                            <div className="formsocial">
-                                <div className="social">
+                            <div className="formsocial"><div className="social">
+                                <a href="https://www.facebook.com/" target="_blank" >
                                     <FaFacebookF size={30} />
+                                </a>
+                            </div>
+                                <div className="social">
+                                    <a href="https://www.facebook.com/" target="_blank" >
+                                        <BsInstagram size={30} />
+                                    </a>
                                 </div>
                                 <div className="social">
-                                    <BsInstagram size={30} />
+                                    <a  href="https://www.facebook.com/" target="_blank" >
+                                        <BsLinkedin size={30} />
+                                    </a>
                                 </div>
                                 <div className="social">
-                                    <FaLinkedinIn size={30} />
-                                </div>
-                                <div className="social">
-                                    <BsYoutube size={30} />
+                                    <a  href="https://www.facebook.com/" target="_blank" >
+                                        <BsYoutube size={30} />
+                                    </a>
                                 </div>
                             </div>
                         </div>

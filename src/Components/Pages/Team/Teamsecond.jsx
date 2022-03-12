@@ -38,10 +38,48 @@ function Teamsecond() {
                             <div className="image">
                                 <img src="/Images/teacher1.jpg" alt="" />
                             </div>
+                            <div className="teachdes">
+                                <h1>
+                                    Nat Reynolds
+                                </h1>
+                                <h2>
+                                    Financial Director
+                                </h2>
+                                <div className="socially">
+                                    <div className="social">
+                                        <BsFacebook size={25} />
+                                    </div>
+                                    <div className="social">
+                                        <BsInstagram size={25} />
+                                    </div>
+                                    <div className="social">
+                                        <BsLinkedin size={25} />
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div className="col-md-4 col-lg-4 col-sm-4">
                             <div className="image">
                                 <img src="/Images/teacher1.jpg" alt="" />
+                            </div>
+                            <div className="teachdes">
+                                <h1>
+                                    Nat Reynolds
+                                </h1>
+                                <h2>
+                                    Financial Director
+                                </h2>
+                                <div className="socially">
+                                    <div className="social">
+                                        <BsFacebook size={25} />
+                                    </div>
+                                    <div className="social">
+                                        <BsInstagram size={25} />
+                                    </div>
+                                    <div className="social">
+                                        <BsLinkedin size={25} />
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -17,9 +17,9 @@ function Coursessecond() {
                     <h2>
                         WE CREATE BRANDS THE WORLD LOVES
                     </h2>
-                    <h1>
+                    {/* <h1>
                         About Design Studio
-                    </h1>
+                    </h1> */}
                     <p>
                         Paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id suscipit ex. Suspendisse rhoncus laoreet purus . Phasellus sed efficitur dolor, et ultricies sapien. Quisque fringilla sit amet dolor commodo efficitur. Aliquam et sem odio.
                         In ullamcorper nisi nunc, et molestie ipsum iaculis sit amet.
@@ -27,7 +27,9 @@ function Coursessecond() {
                     <div className="first_course_button">
                         <Stack direction="row" spacing={2}>
                             <Button className="butoutlined" color="secondary">
-                                Book free trial
+                                <a a href="https://docs.google.com/forms/d/e/1FAIpQLSelDZs8ZQMX9cMqJcKtjTmcetD8BP4tkJMcKS7Ajnsd3Kh-qg/viewform?usp=sf_link" target="_blank" >
+                                    Book free trial
+                                </a>
                             </Button>
                         </Stack>
                     </div>

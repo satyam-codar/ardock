@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from 'react-router-dom';
 
 import "./Home_com.css"
 
@@ -27,10 +28,12 @@ export class Home_first extends Component {
                     <div className="first_home_button">
                       <Stack direction="row" spacing={2}>
                         <Button className="butoutlined"  color="secondary">
+                          <a a href="https://docs.google.com/forms/d/e/1FAIpQLSelDZs8ZQMX9cMqJcKtjTmcetD8BP4tkJMcKS7Ajnsd3Kh-qg/viewform?usp=sf_link" target="_blank" >
                           Book free trial
+                          </a>
                         </Button>
                         <Button variant="outlined" color="secondary">
-                          Contact Us
+                          <Link to='/Contactus'>Contact Us</Link>
                         </Button>
                       </Stack>
                     </div>

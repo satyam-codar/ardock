@@ -18,12 +18,14 @@
   text-align: center;
   overflow: hidden;
 }
+
 .teamfirst .imagee img {
   width: auto;
   height: 500px;
   margin-left: -100px;
   max-height: 100%;
 }
+
 .teamfirst .image .smallpic {
   display: flex;
   flex-wrap: wrap;
@@ -31,6 +33,7 @@
   flex-direction: row;
   overflow: hidden;
 }
+
 .teamfirst .indipic {
   flex: 50%;
   order: 1;

@@ -5,11 +5,11 @@
 }
 
 .contfirst .contfirstrow .contactform {
-  margin: 100px 0px 0px 0px;
+  margin: 20px 0px 0px 0px;
   /* text-align: center; */
 }
 .contfirst .contfirstrow .contactform h1 {
-  margin-left: 40px;
+  margin: 0px 0px 20px 20px ;
   font-size: 50px;
   font-weight: 600;
   color: #3a143f;
@@ -28,21 +28,55 @@
   /* scale: 1.2; */
 }
 
+/* --------------------form------------------------ */
 .upr2 {
-  /* border: 1px solid rgb(25, 0, 255); */
   width: 100%;
-  /* width: 400px; */
 }
-
 .upr1 {
   background-color: #e3e4e6;
   width: 100%;
 }
-.upr form input {
+.upr form input{
   color: #3a143f;
+  font-size: 20px;
+  border-bottom: 2px solid #3a143f !important;
+}
+.upr form label{
+  color: #3a143f;
+  font-size: 17px;
+}
+.upr form i{
+  color: #3a143f;
+  margin-top: 15px;
   font-size: 20px;
 }
 
+.upr form textarea {
+  border-bottom: 2px solid #3a143f !important;
+  color: #3a143f;
+  font-size: 18px;
+  /* margin: -35px 0px 0px 0px; */
+}
+
+.upr Button {
+  /* height: 25px; */
+  height: 4rem;
+  margin: 0px 0px 0px 20px;
+  font-size: 15px;
+  border: 1px solid;
+  border-radius: 0px;
+  padding: 1px 20px;
+  /* border-color: #B1363E; */
+  border-color: #3A143F;
+  background-color: #E3E4E6;
+  color: #3A143F;
+}
+
+.upr button:hover {
+  background-color: #3A143F;
+  color: #E3E4E6;
+  border-color: #E3E4E6;
+}
 /* -------------------------------contactseccontent---------------------- */
 .contactseccontent {
   display: flex;

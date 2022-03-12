@@ -164,7 +164,12 @@
 }
 
 .whyus p{
-    font-size: 15px;
+    font-size: 17px;
+    font-weight: 400;
+}
+.whyus h3{
+    font-size: 25px;
+    font-weight: 500;
 }
 
 .whyus .bulltex{
@@ -293,12 +298,13 @@
     margin: 50px auto;
 }
 .homesmalldes .smalldescont h1{
-    font-size: 25px;
+    font-size: 28px;
     font-weight: 500;
 }
 .homesmalldes .smalldescont p{
     margin: 20px 0px;
     font-size: 17px;
+    font-weight: 400;
 }
 .homesmalldes .smalldesimg{
     width: 300px;

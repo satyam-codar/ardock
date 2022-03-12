@@ -1,5 +1,5 @@
 import React from 'react'
-import CustomizedAccordions from './Homeaccordian'
+import ControlledAccordions from './Homeaccordian'
 
 function Homeaccor() {
     return (
@@ -9,7 +9,7 @@ function Homeaccor() {
                     <img src="/Images/FAQ.png" alt="scfasdfa" />
                 </div>
                 <div className="homeaccordian">
-                    <CustomizedAccordions />
+                    <ControlledAccordions/>
                 </div>
             </div>
         </div>

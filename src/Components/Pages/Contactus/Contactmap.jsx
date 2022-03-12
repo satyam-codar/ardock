@@ -3,8 +3,7 @@ import React from 'react'
 import { loadAnimation } from "lottie-web";
 import { defineLordIconElement } from "lord-icon-element";
 
-import { BsInstagram, BsYoutube } from 'react-icons/bs';
-import { FaFacebookF, FaLinkedinIn } from 'react-icons/fa';
+import { BsFacebook, BsLinkedin, BsInstagram, BsYoutube } from 'react-icons/bs';
 
 
 function Contactmap() {
@@ -17,6 +16,7 @@ function Contactmap() {
                         <div className="row">
                             <div className="col-md-6 col-lg-6 col-sm-12">
                                 <div className="contmapicon">
+                                    <a href="https://goo.gl/maps/ivncdQx35iJd15rp9" target="_blank" >
                                     <div className="conticon">
                                         <script src="https://cdn.lordicon.com/lusqsztk.js"></script>
                                         <lord-icon
@@ -26,6 +26,7 @@ function Contactmap() {
                                             style={{ width: "70px", height: "70px" }}>
                                         </lord-icon>
                                     </div>
+                                    </a>
                                     <h1>
                                         Address:
                                     </h1>
@@ -48,12 +49,12 @@ function Contactmap() {
                                         </lord-icon>
                                     </div>
                                     <h1>
-                                        Address:
+                                        Mail Us:
                                     </h1>
                                     <h2>
-                                        121 Rock Sreet, 21 Avenue,
-                                        <br />
-                                        New York, NY 92103-9000
+                                        <a href="mailto:webmot.in@gmail.com">
+                                        webmot.in@gmail.com
+                                        </a>
                                     </h2>
                                 </div>
                             </div>
@@ -69,26 +70,21 @@ function Contactmap() {
                                         </lord-icon>
                                     </div>
                                     <h1>
-                                        Address:
+                                        Reach Us On:
                                     </h1>
                                     <h2>
-                                        121 Rock Sreet, 21 Avenue,
+                                        <a href="tel:+916377076132">
+                                        +91 6377076132
+                                        </a>
                                         <br />
-                                        New York, NY 92103-9000
+                                        <a href="tel:+916377076132">
+                                            +91 6377076132
+                                        </a>
                                     </h2>
                                 </div>
                             </div>
                             <div className="col-md-6 col-lg-6 col-sm-12">
                                 <div className="contmapicon">
-                                    {/* <div className="conticon">
-                                        <script src="https://cdn.lordicon.com/lusqsztk.js"></script>
-                                        <lord-icon
-                                            src="https://cdn.lordicon.com/zzcjjxew.json"
-                                            trigger="morph-two-way"
-                                            colors="primary:#999999,secondary:#999999"
-                                            style={{ width: "70px", height: "70px" }}>
-                                        </lord-icon>
-                                    </div> */}
                                     <h1 className='seperate'>
                                         CONTACT US:
                                     </h1>
@@ -99,16 +95,24 @@ function Contactmap() {
                                     </h2>
                                     <div className="formsocial">
                                         <div className="social">
-                                            <FaFacebookF size={30} />
+                                            <a a href="https://www.facebook.com/" target="_blank" >
+                                                <BsFacebook size={30} />
+                                            </a>
                                         </div>
                                         <div className="social">
-                                            <BsInstagram size={30} />
+                                            <a a href="https://www.facebook.com/" target="_blank" >
+                                                <BsInstagram size={30} />
+                                            </a>
                                         </div>
                                         <div className="social">
-                                            <FaLinkedinIn size={30} />
+                                            <a a href="https://www.facebook.com/" target="_blank" >
+                                                <BsLinkedin size={30} />
+                                            </a>
                                         </div>
                                         <div className="social">
-                                            <BsYoutube size={30} />
+                                            <a a href="https://www.facebook.com/" target="_blank" >
+                                                <BsYoutube size={30} />
+                                            </a>
                                         </div>
                                     </div>
                                 </div>

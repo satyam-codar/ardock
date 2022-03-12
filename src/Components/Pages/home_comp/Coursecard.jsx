@@ -1,4 +1,7 @@
 import * as React from 'react';
+import { Link } from 'react-router-dom';
+
+
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
@@ -37,7 +40,7 @@ function MultiActionAreaCard(props) {
                 <div className="firstbut">
                     <Stack direction="row" spacing={2}>
                         <Button color="secondary" className='cardbutton'>
-                            Read more
+                            <Link to='#'>Read more</Link>
                         </Button>
                     </Stack>
                 </div>

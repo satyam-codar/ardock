@@ -1,0 +1,316 @@
+.indifirst{
+ height: 70vh;
+ position: relative;
+}
+.indifirst .videosection{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+        background-color: #563B7D;
+        z-index: 0;
+    /* opacity: 0.5; */
+    /* z-index: -1; */
+}
+
+.indifirst .videosection img{
+    /* position: absolute; */
+    height: auto;
+    width: 100%;
+    opacity: 0.3;
+}
+.indifirst .texty{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+}
+.indifirst .texty .textytext{
+    margin: 200px auto;
+    max-width: 50%;
+}
+
+.textytext h3{
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.textytext h1{
+    font-size: 40px;
+    margin: 20px 0px;
+}
+.indifirst .firstbut{
+    margin: 0px auto;
+    /* border: 1px solid white; */
+}
+.indifirst .firstbut .allbut{
+    margin: 30px auto;
+    /* border: 1px solid white; */
+    width: fit-content;
+}
+.indifirst .firstbut .Buttoon{
+    margin: 10px 10px;
+}
+.indifirst Button{
+  height: 4rem;
+  font-size: 15px;
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 1px 20px;
+  border-color: #ffffff;
+  /* background-color: #3D3E71; */
+  /* color: white; */
+  min-width: 200px;
+}
+
+.indifirst .firstbut .Buttoon1{
+    color: #3D3E71;
+    background-color: white !important;
+}
+.indifirst .firstbut .Buttoon2{
+    color: #ffffff;
+    background-color: #4f4172 !important;
+}
+.indifirst .firstbut .Buttoon2:hover{
+    /* color: #ffffff; */
+    background-color: #3C2D5E !important;
+}
+
+/* -----------------------------------indisecond--------------------- */
+.indisecond{
+    margin: 50px 0px;
+}
+.indisecond .smalldes{
+    padding: 15px 15px;
+    width: 80%;
+    margin: 0px auto;
+    border-left: 2px solid #DBE2E8;
+}
+.indisecond .smalldes h2{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #657482;
+}
+.indisecond .smalldes h1{
+    font-size: 20px;
+    font-weight: 500;
+    color: #2e3d49;
+}
+
+.indisecond .smalldes p{
+    font-size: 14px;
+    font-weight: 500;
+    color: #525c65;
+    letter-spacing: 1px;
+}
+/* ---------------------------------inidividual prof about-------------- */
+.indiaboutprof{
+    /* height: 50vh; */
+    background-color: #413F72;
+    color: #ffffff;
+    padding: 70px 0px;
+}
+.indiaboutprof h2{
+    font-size: 30px;
+}
+.indiaboutprof h2::after{
+    display: block;
+    background-color: #ffffff;
+    width: 70%;
+    height: 3px;
+    content: " ";
+    margin: 5px 0px;
+}
+.indiaboutprof p{
+    margin: 10px;
+    font-size: 20px;
+}
+.indiaboutprof .profimage{
+    width: 70%;
+    height: 400px;
+    margin: 0px auto;
+    overflow: hidden;
+    border-radius: 15px;
+    border: 5px solid #372550;
+}
+
+.indiaboutprof .profimage img{
+    width: auto;
+    height: 500px;
+    margin: -80px 0px;
+}
+
+/* ----------------------indisyllabus------------------------ */
+.indisyllabus{
+    /* height: 70vh; */
+    padding: 100px 0px 50px 0px;
+}
+.indisyllabus h1{
+    font-size: 45px;
+    text-align: center;
+    font-weight: 500;
+}
+.indisyllabus .content{
+    margin: 80px 0px;
+}
+
+.syllcard{
+    margin: 20px 0px;
+    border: 2px solid #413F72;
+    padding: 15px 25px;
+    border-radius: 15px;
+}
+
+.syllcardimg{
+    /* width: 100%; */
+    /* padding: 10px; */
+    overflow: hidden;
+    height: 250px;
+    width: 250px;
+    /* border: 1px solid red; */
+    /* text-align: center; */
+    border-radius: 50%;
+    /* position: relative; */
+}
+.syllcardimg img{
+    /* width: 100%; */
+    height: 100%;
+    width: auto;
+    /* position: absolute; */
+    /* height: 100%; */
+}
+.syllcard .syllcardtext{
+    padding: 20px 10px;
+}
+.syllcard .syllcardtext h1{
+    font-size: 37px;
+    font-weight: 300;
+    text-align: left;
+    padding: 20px 0px 10px 0px;
+}
+.syllcard .syllcardtext h1::after{
+    display: block;
+    width: 40%;
+    height: 3px;
+    background-color:#413F72 ;
+    content: " ";
+    margin: 4px 0px 0px 0px;
+}
+.syllcard .syllcardtext p{
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.syllcard .syllcardtext h2{
+    border-left: 2px solid #a8aeb3;
+    padding-left: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #657482;
+}
+
+
+
+
+
+/* ------------------------pricing------------------------------- */
+
+.indipricing{
+    margin: 20px 0px 10px 0px;
+    background-color: #563B7D;
+    /* height: 70vh; */
+    text-align: center;
+    padding: 100px 0px 50px 0px;
+}
+.indipricing h2{
+    color: #ffffff;
+    font-size: 18px ;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.indipricing h1{
+    font-size: 38px;
+    margin: 15px 0px;
+    color: #ffffff;
+    text-transform: capitalize;
+    
+}
+.indipricing .pricing{
+    margin: 50px 0px 20px 0px;
+    text-align: left !important;
+}
+.indipricing .pricingcard{
+    padding: 30px 20px;
+    /* height: 400px; */
+    background-color: #ffffff;
+    width: 70%;
+    margin: 0px auto;
+    border-radius: 10px;
+}
+
+.indipricing .pricingcard .access{
+    color: #563B7D;
+    font-size: 18px;
+    font-weight: 700;
+}
+.indipricing .pricingcard h3{
+    color: #33224d;
+    font-size: 20px;
+}
+.indipricing .pricingcard hr{
+    height: 2px;
+}
+.indipricing .pricingcard h1{
+    color: #000000;
+    font-size: 40px;
+    font-weight: 600;
+    margin: 0px;
+}
+.indipricing .pricingcard .lowaccess{
+    color: #33224d !important;
+    font-weight: 400;
+    margin: 0px;
+}
+.indipricing .pricingcard p{
+    margin: 20px 0px;
+    font-size: 17px;
+}
+
+.indipricing Button{
+    margin: 10px 0px;
+    width: 80%;
+  height: 4rem;
+  font-size: 15px;
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 1px 20px;
+  border-color: #ffffff;
+  /* background-color: #3D3E71; */
+  /* color: white; */
+  min-width: 200px;
+}
+.indipricing .firstbut .Buttoon2{
+    color: #ffffff;
+    background-color: #4f4172 !important;
+}
+
+.indipricing .firstbut .Buttoon2:hover{
+    /* color: #ffffff; */
+    background-color: #3C2D5E !important;
+}
+
+
+
+
+
+
+
+/* -------------------------indifaq------------------------- */
+.indifaq{
+    margin: 100px;
+}

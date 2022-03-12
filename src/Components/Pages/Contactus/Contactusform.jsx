@@ -1,5 +1,10 @@
 import React from "react";
-import { MDBContainer, MDBRow, MDBCol, MDBInput, MDBBtn, MDBCard, MDBCardBody } from 'mdbreact';
+import { MDBContainer, MDBRow, MDBCol, MDBInput, MDBBtn, MDBCard, MDBCardBody, MDBIcon } from 'mdbreact';
+
+import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
+
+
 
 const FormPage = () => {
     return (
@@ -30,9 +35,20 @@ const FormPage = () => {
                                         success="right"
                                     />
                                     <MDBInput label="Subject" icon="tag" group type="text" validate error="wrong" success="right" />
-                                    <MDBInput type="textarea" rows="5" label="Your message" icon="pencil-alt" />
+                                    <MDBInput type="textarea" rows="5" label="Your message" icon="pencil-alt" group  validate error="wrong" success="right"/>
                                 </div>
                                 <div className="text-center py-4 mt-3">
+                                    <div className="firstbut">
+                                        <Stack direction="row" spacing={2}>
+                                            <Button color="secondary">
+                                                Submit
+                                            </Button>
+                                        </Stack>
+                                    </div>
+                                    {/* <MDBBtn outline color="info">
+                                        Send
+                                        <MDBIcon far icon="paper-plane" className="ml-1" />
+                                    </MDBBtn> */}
                                     {/* <MDBBtn color="cyan" type="submit">
                                         Register
                                     </MDBBtn> */}

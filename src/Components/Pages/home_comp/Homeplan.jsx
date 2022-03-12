@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
@@ -19,7 +20,7 @@ function Homeplan() {
                 <div className="firstbut">
                     <Stack direction="row" spacing={2}>
                         <Button color="secondary" className='cardbutton'>
-                            Get your plan
+                            <Link to='#'>Get your plan</Link>
                         </Button>
                     </Stack>
                 </div>
