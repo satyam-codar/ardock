@@ -139,6 +139,13 @@
     flex-direction: column;
   }
 }
+#success-msg{
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    display: none;
+    
+}
 
 /* ---------------------------------contactmap--------------------- */
 .contactmap {
