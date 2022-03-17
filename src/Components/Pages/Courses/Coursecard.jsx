@@ -54,13 +54,6 @@ function MultiActionAreaCard(props) {
                 </CardContent>
             </CardActionArea>
             <CardActions className='cardaction'>
-                {/* <div className="firstbut">
-                    <Stack direction="row" spacing={2}>
-                        <Button color="secondary" className='cardbutton'>
-                            Read more
-                        </Button>
-                    </Stack>
-                </div> */}
                 <div className="price">
                     ₹ 7,199
                 </div>
@@ -72,9 +65,6 @@ function MultiActionAreaCard(props) {
                         <Button className="butoutlined" color="secondary">
                             Buy Now  <MdOutlineDoubleArrow size={22} />
                         </Button>
-                        {/* <Button className="butoutlined" color="secondary">
-                            More details  <MdOutlineDoubleArrow size={22} />
-                        </Button> */}
                     </Stack>
                 </div>
             </CardActions>

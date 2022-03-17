@@ -13,7 +13,7 @@ function Footer() {
         <div className='footers'>
             <div className="container">
                 <div className="row">
-                    <div className="col-md-3 col-sm-4 col-lg-3">
+                    <div className="col-md-6 col-sm-6 col-lg-3">
                         <h1>
                             Quick Links
                         </h1>
@@ -46,7 +46,7 @@ function Footer() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-3 col-sm-4 col-lg-3">
+                    <div className="col-md-6 col-sm-6 col-lg-3">
                         <h1>
                             Contact Us
                         </h1>
@@ -61,7 +61,7 @@ function Footer() {
 
                         </div>
                     </div>
-                    <div className="col-md-3 col-sm-4 col-lg-3">
+                    <div className="col-md-6 col-sm-6 col-lg-3">
                         <h1>
                             Featured Courses
                         </h1>
@@ -74,7 +74,7 @@ function Footer() {
                             <h3><a href="#" target="_self"> Contact Us </a></h3>
                         </div>
                     </div>
-                    <div className="col-md-3 col-sm-4 col-lg-3">
+                    <div className="col-md-6 col-sm-6 col-lg-3">
                         <h1>
                             Useful links
                         </h1>

@@ -1,353 +1,448 @@
-.firstcomp{
-    height: 100vh;
-    color: white;
-    /* border: 1px solid red; */
-    /* position: relative; */
+.firstcomp {
+  transition: all 0.5s ease-out;
+  height: 100vh;
+  color: white;
+  /* border: 1px solid red; */
+  /* position: relative; */
 }
 
-
-.firstcomp .image{
-    padding: 200px 0 100px 0;
-    background-image: url("/src/Image/Aboutusfirst.jpg");
-    object-fit: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
-    vertical-align: middle;
-    height: 100%;
+.firstcomp .image {
+  padding: 200px 0 100px 0;
+  background-image: url("/src/Image/Aboutusfirst.jpg");
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  vertical-align: middle;
+  height: 100%;
 }
-.firstcomp .image h1{
-    font-size: 130px;
+.firstcomp .image h1 {
+  word-break: break-all;
+  font-size: 130px;
 }
-.firstcomp .image h2{
-    text-transform: uppercase;
-}
-
-.firstcomp .firstbut{
-    margin-top: 25px;
-    text-transform: uppercase;
+.firstcomp .image h2 {
+  text-transform: uppercase;
 }
 
-.firstcomp Button{
-    height: 5.5rem;
-    font-size: 18px;
-    border: 1px solid;
-    border-radius: 12px;
-    padding: 7px 30px;
-    background-color: #B1363E;
-    color: white;
-}
-.firstcomp button:hover{
-    background-color: #B1363E;
-    border-color: #B1363E ;
+.firstcomp .firstbut {
+  margin-top: 25px;
+  text-transform: uppercase;
 }
 
+.firstcomp Button {
+  height: 5.5rem;
+  font-size: 18px;
+  border: 1px solid;
+  border-radius: 12px;
+  padding: 7px 30px;
+  background-color: #b1363e;
+  color: white;
+}
+.firstcomp button:hover {
+  background-color: #b1363e;
+  border-color: #b1363e;
+}
+
+@media screen and (max-width: 1000px) {
+  .firstcomp .image h1{
+    font-size: 110px;
+}
+  .firstcomp .image {
+  padding: 100px 0 100px 0;
+}
+}
+@media screen and (max-width: 768px) {
+  .firstcomp .image h1{
+    font-size: 80px;
+}
+}
 /* -----------------------------aboutmore----------------------------- */
-.aboutmore{
-    border: 1px solid;
-    border-color: white;
-    display: block;
-    height: 400px;
-    margin: 10px;
+.aboutmore {
+  border: 1px solid red;
+  border-color: white;
+  display: block;
+  height: 400px;
+  margin: 10px auto;
 }
-.aboutmore .aboutblk{
-    display: block;
-    margin: -142px auto 50px auto;
-    /* position: relative; */
-    width: 60%;
-    height: 500px;
-    /* background-color: #AB9393; */
+.aboutmore .aboutblk {
+  display: block;
+  margin: -142px auto 50px auto;
+  width: 80%;
+  height: 500px;
 }
-.aboutmore .aboutblk .abouttext{
-    /* position: absolute; */
-    display: flex;
-    flex-direction: row;
+.aboutmore .aboutblk .abouttext {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 1 1 100%;
+  flex-direction: row;
 }
-.aboutblk .abouttext .flexleft{
-    flex:0 0 30%;
-    background-image: url("/src/Image/childpaints.jpg");
-    background-position: 25.93% 50%;
-    max-width: 30%;
-    min-height: 500px;
-    /* min-height: 100%; */
-    /* min-width: 100%; */
+.aboutblk .abouttext .flexleft {
+  flex: 0 0 30%;
+  background-image: url("/src/Image/childpaints.jpg");
+  background-position: 25.93% 50%;
+  max-width: 30%;
+  min-height: 500px;
 }
-.aboutblk .abouttext .flexright{
-    flex:0 0 70%;
-    max-width: 70%;
-    background-color: #ab9393;
-    padding: 80px 80px 30px 80px;
-    color: white;
-    /* background-image: url("/src/Image/childpaints.jpg"); */
-    /* min-height: 100%; */
-    /* min-width: 100%; */
+.aboutblk .abouttext .flexright {
+  flex: 0 0 70%;
+  max-width: 70%;
+  background-color: #ab9393;
+  padding: 80px 80px 30px 80px;
+  color: white;
 }
 
-.aboutblk .abouttext .flexright h1{
-    font-size: 50px;
-    position: relative;
-    margin: 10px 0px;
+.aboutblk .abouttext .flexright h1 {
+  font-size: 50px;
+  position: relative;
+  margin: 10px 0px;
 }
 
-.flexright h1::before{
-    height: 3px;
-    background-color: white;
-    width: 80%;
-    color: white;
-    content: '';
-    display: block;
-    position: absolute;
-    top: -20%;
-    bottom: 0;
-    left: 0;
-    right: 0;
+.flexright h1::before {
+  height: 3px;
+  background-color: white;
+  width: 80%;
+  color: white;
+  content: "";
+  display: block;
+  position: absolute;
+  top: -20%;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
-.aboutmore Button{
-    /* height: 25px; */
-    height: 4rem;
-    font-size: 15px;
-    border: 1px solid;
-    border-radius: 5px;
-    padding: 1px 20px;
-    border-color: #B1363E;
-    border-color: #B1363E ;
-    background-color: #B1363E;
-    color: white;
-}
-
-.aboutmore button:hover{
-    background-color: #B1363E;
-    border-color: #B1363E ;
-}
-.aboutmore .firstbut{
-    margin-top: 20px;
+.aboutmore Button {
+  /* height: 25px; */
+  height: 4rem;
+  font-size: 15px;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 1px 20px;
+  border-color: #b1363e;
+  border-color: #b1363e;
+  background-color: #b1363e;
+  color: white;
 }
 
-.aboutblk .abouttext .flexright p{
-    font-size: 17px;
+.aboutmore button:hover {
+  background-color: #b1363e;
+  border-color: #b1363e;
+}
+.aboutmore .firstbut {
+  margin-top: 20px;
 }
 
-.abouttext p{
-    margin: 10px 0px;
+.aboutblk .abouttext .flexright p {
+  font-size: 17px;
 }
 
-@media (max-width: 800px) {
-  .aboutblk .abouttext {
+.abouttext p {
+  margin: 10px 0px;
+}
+
+@media screen and (max-width: 800px) {
+  .aboutmore .aboutblk .abouttext {
     flex-direction: column;
+  }
+  .abouttext .flexleft {
+    max-width: 100% !important;
+  }
+  .abouttext .flexright {
+    flex: 0 0 70%;
+    margin: 0px auto;
+    max-width: 100% !important;
+  }
+  .aboutmore {
+  border: 1px solid red;
+  border-color: white;
+  display: block;
+  height: 400px;
+  margin: 10px auto 450px auto;
+}
+}
+@media screen and (max-width: 550px) {
+  .aboutmore {
+  border: 1px solid red;
+  border-color: white;
+  display: block;
+  height: 400px;
+  margin: 10px auto 500px auto;
+}
+}
+@media screen and (max-width: 450px) {
+  .aboutmore {
+  border: 1px solid red;
+  border-color: white;
+  display: block;
+  height: 400px;
+  margin: 10px auto 550px auto;
+}
+}
+@media screen and (max-width: 1300px) {
+  .aboutmore .aboutblk {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .aboutmore .aboutblk .abouttext .flexright {
+    padding: 60px 25px;
   }
 }
 
 /* --------------------------------------chairman's messasge------------------- */
-.aboutchair{
-    /* border: 1px solid red; */
-    margin: 50px auto;
-    padding: 100px  50px auto;
+.aboutchair {
+  margin: 50px auto;
+  padding: 100px 50px auto;
 }
 
-.aboutchair h1{
-    font-size: 50px;
-    color: #3A143F;
+.aboutchair h1 {
+  font-size: 50px;
+  color: #3a143f;
 }
-.aboutchair h1::before{
-    content: "";
-    display: block;
-    margin-bottom: 15px;
-    width: 40%;
-    height: 4px;
-    /* color: #3A143F; */
-    background-color: #3A143F;
-}
-
-.aboutchair p{
-    margin: 10px 0px;
-    font-size: 19px;
-    text-align: justify;
-}
-.aboutchair Button{
-    /* height: 25px; */
-    margin-top: 15px;
-    height: 4rem;
-    font-size: 15px;
-    border: 1px solid;
-    border-radius: 5px;
-    padding: 10px 20px;
-    border-color: #B1363E;
-    border-color: #B1363E ;
-    background-color: #B1363E;
-    color: white;
+.aboutchair h1::before {
+  content: "";
+  display: block;
+  margin-bottom: 15px;
+  width: 40%;
+  height: 4px;
+  /* color: #3A143F; */
+  background-color: #3a143f;
 }
 
-.aboutchair button:hover{
-    background-color: #B1363E;
-    border-color: #B1363E ;
+.aboutchair p {
+  margin: 10px 0px;
+  font-size: 19px;
+  text-align: justify;
+}
+.aboutchair Button {
+  /* height: 25px; */
+  margin-top: 15px;
+  height: 4rem;
+  font-size: 15px;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 10px 20px;
+  border-color: #b1363e;
+  border-color: #b1363e;
+  background-color: #b1363e;
+  color: white;
 }
 
-.chairimage{
-    text-align: center;
+.aboutchair button:hover {
+  background-color: #b1363e;
+  border-color: #b1363e;
 }
-.aboutchair img{
-    max-width: 400px;
-    height: auto;
+
+.chairimage {
+  text-align: center;
 }
-.chairmanmessage{
-    /* border: 1px solid red; */
-    padding: 100px 0px 100px 0;
-    height: 100%;
-    width: 100%;
-    /* text-align: center;
+.aboutchair img {
+  max-width: 400px;
+  height: auto;
+}
+.chairmanmessage {
+  /* border: 1px solid red; */
+  padding: 100px 0px 100px 0;
+  height: 100%;
+  width: 100%;
+  /* text-align: center;
     margin: auto; */
 }
 
 /* -----------------------------about third------------------------- */
-.aboutthird{
-    /* border: 1px solid red; */
-    background-color: #F2F2F2;
-    margin: 50px 0px;
-    padding: 50px 0px;
+.aboutthird {
+  /* border: 1px solid red; */
+  background-color: #f2f2f2;
+  margin: 50px 0px;
+  padding: 50px 0px;
 }
-.aboutthird .aboutthirdtext{
-    align-items: center;
-    /* text-align: center; */
+.aboutthird .aboutthirdtext {
+  align-items: center;
+  /* text-align: center; */
 }
-.aboutthird .abtthirdtext{
-    display: block;
-    padding: 30px;
+.aboutthird .abtthirdtext {
+  display: block;
+  padding: 30px;
 }
-.aboutthird .abtthirdtext .image{
-    /* padding: 100px 0px; */
-    /* text-align: center; */
-    width: 300px;
-    /* border-radius:10px; */
-    overflow: hidden;
-    max-height: 250px;
-    margin: 15px 0px 15px 0px;
-    /* border: 1px solid grey; */
+.aboutthird .abtthirdtext .image {
+  /* padding: 100px 0px; */
+  /* text-align: center; */
+  width: 300px;
+  /* border-radius:10px; */
+  overflow: hidden;
+  max-height: 250px;
+  margin: 15px 0px 15px 0px;
+  /* border: 1px solid grey; */
 }
-.aboutthird .abtthirdtext .image img{
-    border-radius: 10px;
-    /* padding: 100px 0px; */
-    /* max-height:100%; */
+.aboutthird .abtthirdtext .image img {
+  border-radius: 10px;
+  /* padding: 100px 0px; */
+  /* max-height:100%; */
 
-    width: 100%;
-    margin: 15px 0px;
-    /* border: 1px solid grey; */
+  width: 100%;
+  margin: 15px 0px;
+  /* border: 1px solid grey; */
 }
-.aboutthird .abtthirdtext h2{
-    font-weight: 600;
-    font-size: 25px;
+.aboutthird .abtthirdtext h2 {
+  font-weight: 600;
+  font-size: 25px;
 }
-.aboutthird .abtthirdtext p{
-    font-weight: 400;
-    font-size: 15px;
+.aboutthird .abtthirdtext p {
+  font-weight: 400;
+  font-size: 15px;
 }
 
 /* ------------------------key features --------------------------- */
-.keyfeature{
-    text-align: center;
-    margin: 100px 0px 200px 0px;
+.keyfeature {
+  text-align: center;
+  margin: 100px 0px 200px 0px;
 }
-.keyfeature .heading h1{
-    font-size: 50px;
-    /* position: relative; */
-    margin: 10px 0px;
-    color: #3A143F;
-    text-transform: capitalize;
-    text-align: center;
+.keyfeature .heading h1 {
+  font-size: 50px;
+  /* position: relative; */
+  margin: 10px 0px;
+  color: #3a143f;
+  text-transform: capitalize;
+  text-align: center;
 }
-.keyfeature .heading p{
-    font-weight: 400;
-    font-size: 15px;
+.keyfeature .heading p {
+  font-weight: 400;
+  font-size: 15px;
 }
 .keyfeature .imagu {
-    margin: 25px 0px;
-    width: 100%;
-    height: 400px;
-    background-color: #ab9393;
-    overflow: hidden;
+  margin: 25px 0px;
+  width: 100%;
+  height: 400px;
+  background-color: #ab9393;
+  overflow: hidden;
 }
-.keyfeature .imagu img{
-    width: 100%;
-    height: auto;
+.keyfeature .imagu img {
+  width: 100%;
+  height: auto;
+  opacity: 0.8;
 }
-.keyfeature .blks{
-    width: 80%;
-    margin: -130px auto;
-    display: block;
-    /* border: 1px solid red; */
+.keyfeature .blks {
+  width: 80%;
+  margin: -130px auto;
+  display: block;
+  /* border: 1px solid red; */
 }
-.keyfeature .blks .blkstext{
+.keyfeature .blks .blkstext {
+  background-color: #533357;
+  color: white;
+  padding: 30px 50px 40px 50px;
+  margin: 5px;
+}
+.keyfeature .blks .blkstext h1 {
+  font-size: 35px;
+  margin: 5px auto 20px auto;
+}
+.keyfeature .blks .blkstext p {
+  /* font-size: 35px; */
+  font-weight: 400;
+  font-size: 15px;
+  margin: 5px auto 5px auto;
+}
+@media (min-width: 990px) and (max-width: 1200px) {
+  .keyfeature .blks .blkstext {
     background-color: #533357;
     color: white;
-    padding: 30px 50px 40px 50px;
+    padding: 30px 10px 40px 10px;
     margin: 5px;
+  }
 }
-.keyfeature .blks .blkstext h1{
-    font-size: 35px;
-    margin: 5px 0px 20px 0px;
-}
-.keyfeature .blks .blkstext p{
-    /* font-size: 35px; */
-    font-weight: 400;
-    font-size: 15px;
-    margin: 5px 0px 5px 0px;
+@media (max-width: 768px) {
+  .keyfeature .imagu img {
+    width: auto;
+    height: 100%;
+    opacity: 0.8;
+    object-fit: cover;
+  }
 }
 
 /* -----------------------subscribe----------------- */
-.subscribe{
-    background-color: #F2F2F2;
-    margin: 100px auto;
-    padding: 50px 0px 50px 0px;
-    color: #3A143F;
+.subscribe {
+  background-color: #f2f2f2;
+  margin: 100px auto;
+  padding: 50px 0px 50px 0px;
+  color: #3a143f;
 }
-.subscribe h1{
-    font-size: 40px;
-    margin: 10px 0px;
-    color: #3A143F;
-    text-transform: capitalize;
+.subscribe h1 {
+  font-size: 40px;
+  margin: 10px 0px;
+  color: #3a143f;
+  text-transform: capitalize;
 }
-.subscribe p{
-    font-weight: 400;
-    font-size: 15px;
+.subscribe p {
+  font-weight: 400;
+  font-size: 15px;
 }
 .subscribe {
-    size: large;
+  size: large;
 }
-.subscribe .textfieldform{
-    width: 70%;
-    padding: 0px !important;
+.subscribe .textfieldform {
+  width: 70%;
+  margin: 0px 3px 0px 0px;
+  padding: 0px !important;
+  object-fit: cover;
 }
-.subscribe .formbox{
-    
-    /* display: block; */
-    /* display: inline; */
-    margin: 50px auto 20px auto;
-    text-align: center;
+.subscribe .formbox {
+  /* display: block; */
+  /* display: inline; */
+  width: 100%;
+  /* border: 1px solid red; */
+  margin: 50px 0px 20px 0px;
+  /* text-align: center; */
 }
-.subscribe .formbox Button{
-    background-color: #533357;
-    height: 40px;
-}
-.subscribe input{
-    margin: 0px !important;
-    font-size: 16px;
-}
-/* .subscribe .formbox Box,.subscribe .formbox Button{
-    display: inline;
-} */
-.subscribe  .social{
-    /* border: 1px solid red; */
-    /* background-color: blue; */
-    /* align-items: center; */
-    color: #533357 !important;
-    margin: 0px 7px;
-    text-align: center;
-    display: inline-block;
+.subscribe .formbox Button {
+  background-color: #533357;
+  object-fit: cover;
+  width: 25%;
+  height: 40px;
+  /* float: ; */
+  margin: 8px auto 0px auto;
+  font-size: 16px;
 }
 
-#success-msg1{
-    text-align: center;
-    margin-top: 20px;
-    font-weight: 500;
-    margin-bottom: 20px;
-    display: none;
+.subscribe input {
+  margin: 0px 0px !important;
+  font-size: 16px;
+}
+
+.subscribe .social {
+  color: #533357 !important;
+  margin: 0px 14px 0px 0px;
+  text-align: center;
+  display: inline-block;
+}
+
+#success-msg1 {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  display: none;
+}
+@media (max-width: 990px) and (min-width: 768px) {
+  .subscribe .textfieldform {
+    width: 100%;
+    margin: 0px 3px 0px 0px;
+    padding: 0px !important;
+    object-fit: cover;
+  }
+  .subscribe .formbox Button {
+    object-fit: cover;
+    width: 35%;
+  }
+}
+@media (max-width: 520px) {
+  .subscribe .textfieldform {
+    width: 100%;
+    margin: 0px 3px 0px 0px;
+    padding: 0px !important;
+    object-fit: cover;
+  }
+  .subscribe .formbox Button {
+    object-fit: cover;
+    width: 35%;
+  }
 }

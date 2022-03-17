@@ -1,264 +1,305 @@
-.home_first{
-    height: 80vh;
-    /* border: 1px solid rgb(206, 90, 90); */
+.home_first {
+  /* min-height: 80vh; */
+  /* border: 1px solid rgb(206, 90, 90); */
 }
 
-.fur_home{
-    /* border: 1px solid rgb(197, 19, 19); */
-    /* height: 80vh; */
-    padding: 100px 0px 50px 0px;
+.fur_home {
+  /* border: 1px solid rgb(197, 19, 19); */
+  padding: 100px 0px 50px 0px;
 }
-.fur_home .first_content{
-    margin-top: 50px;
-}
-
-.fur_home .first{
-    /* font-size: 60px; */
-    margin-bottom: 0px;
-    font-size: 100px;
-    font-weight: 900;
-    color: #3A143F;
-}
-.fur_home .second{
-    margin-top: -20px;
-    /* font-size: 60px; */
-    text-transform: capitalize;
-    font-size: 80px;
-    font-weight: 500;
+.fur_home .first_content {
+  margin-top: 50px;
 }
 
-.fur_home h2{
-    color: #5a7184;
-    font-weight: 400;
-    /* font-size: 20px; */
+.fur_home .first {
+  margin-bottom: 0px;
+  font-size: 100px;
+  font-weight: 900;
+  color: #3a143f;
+}
+.fur_home .second {
+  margin-top: -20px;
+  text-transform: capitalize;
+  font-size: 80px;
+  font-weight: 500;
 }
 
-.first_home_button{
-    margin: 40px 20px;
+.fur_home h2 {
+  color: #5a7184;
+  font-weight: 400;
+  /* font-size: 20px; */
 }
 
+.first_home_button {
+  margin: 40px 20px;
+}
 
-.home_first .fur_home Button{
-    height: 5.5rem;
+.home_first .fur_home Button {
+  height: 5rem;
+  font-size: 18px;
+  border: 1px solid;
+  border-radius: 55px;
+  padding: 10px 30px;
+  margin: 5px 5px;
+}
+.home_first .fur_home .butoutlined {
+  color: white;
+  background-color: #3a143f;
+}
+
+.fur_home .first_image img {
+  /* border: 1px solid rgb(89, 89, 165); */
+  width: 540px;
+  height: 540px;
+  /* margin-bottom: 40px; */
+  /* padding-top: -40px; */
+}
+.fur_home .first_image {
+  /* background-image: url("/src/Image/blob.svg"); */
+  /* background-size: 600px 600px; */
+  /* border: 1px solid red; */
+  /* height: 100%; */
+  /* height: 40vh; */
+  /* position: relative; */
+  /* background-size: 100%; */
+  /* border: 1px solid blue; */
+  /* padding-bottom: 50px ; */
+  /* height: 20vh; */
+}
+
+.fur_home .first_image .childimage {
+  border: 1px solid;
+  width: 540px;
+  height: 540px;
+  background-size: auto 600px;
+  margin: 0px auto;
+  background-image: url("/src/Image/children.jpg");
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1160px) and (min-width: 992px) {
+  .fur_home .first_image img {
+    /* border: 1px solid rgb(89, 89, 165); */
+    width: 400px;
+    height: 400px;
+    /* margin-bottom: 40px; */
+    /* padding-top: -40px; */
+  }
+  .fur_home .first_image .childimage {
+    margin: 40px auto;
+    width: 400px;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .fur_home .first_image img {
+    /* border: 1px solid rgb(89, 89, 165); */
+    width: 360px;
+    height: 360px;
+    /* margin-bottom: 40px; */
+    /* padding-top: -40px; */
+  }
+  .fur_home .first_image .childimage {
+    margin: 40px auto;
+    background-position: 10% 20%;
+    width: 360px;
+    height: 360px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .home_first .fur_home Button {
+    height: 7.5rem;
     font-size: 18px;
     border: 1px solid;
     border-radius: 55px;
     padding: 10px 30px;
+    margin: 5px 5px;
+  }
 }
-.home_first .fur_home .butoutlined{
-    color: white;
-    background-color: #3A143F;
-}
-
-.fur_home .first_image img{
-    /* border: 1px solid rgb(89, 89, 165); */
-    width: 540px;
-    height: 540px;
-    /* margin-bottom: 40px; */
-    /* padding-top: -40px; */
-}
-.fur_home .first_image{
-    /* background-image: url("/src/Image/blob.svg"); */
-    /* background-size: 600px 600px; */
-    /* border: 1px solid red; */
-    /* height: 100%; */
-    /* height: 40vh; */
-    /* position: relative; */
-    /* background-size: 100%; */
-    /* border: 1px solid blue; */
-    /* padding-bottom: 50px ; */
-    /* height: 20vh; */
-}
-/* .fur_home .relback{
-    position: absolute;
-
-} */
-
-
-.fur_home .first_image .childimage{
-    border: 1px solid;
-    width: 540px;
-    height: 540px;
-    background-size: auto 600px;
-    /* background-position: -50% -50%; */
-    background-image: url("/src/Image/children.jpg");
-    border-radius: 50%;
-    overflow: hidden;
-}
-
 
 
 /* --------------------------home sec comp-------------------------- */
-.homeseccomp{
-    /* background-color: #E5E5E5; */
-    /* background-color: #43256F; */
-    margin: 50px auto 10px auto;
-    background-color: rgba(67, 37, 111,0.4);
-    padding: 50px 0px;
+.homeseccomp {
+  /* background-color: #E5E5E5; */
+  /* background-color: #43256F; */
+  margin: 0px auto 0px auto;
+  background-color: rgba(67, 37, 111, 0.4);
+  padding: 50px 0px;
 }
-.homeseccomp .homeseccomptext{
-    margin: 20px 10px;
+.homeseccomp .homeseccomptext {
+  margin: 20px 10px;
 }
-.homeseccomp .homeseccomptext p{
-    font-size: 18px;
-    font-weight: 400;
+.homeseccomp .homeseccomptext p {
+  font-size: 18px;
+  font-weight: 400;
 }
-.homeseccomp .homeseccompheading{
+.homeseccomp .homeseccompheading {
+  display: block;
+  width: 80%;
+  margin: 20px auto;
+}
+.homeseccomp .homeseccompheading h2 {
+  font-size: 30px;
+  font-weight: 600;
+}
+.homeseccomp .homeseccompheading h2::before {
+  display: block;
+  content: " ";
+  width: 70%;
+  height: 8px;
+  margin: 10px 0px;
+  background-color: #3a143f;
+}
+@media screen and (max-width: 770px) {
+  .homeseccomp .homeseccompheading {
     display: block;
     width: 80%;
-    margin: 20px auto;
-}
-.homeseccomp .homeseccompheading h2{
-    font-size: 30px;
-    font-weight: 600;
-}
-.homeseccomp .homeseccompheading h2::before{
-    display: block;
-    content: " ";
-    width: 70%;
-    height: 8px;
-    margin: 10px 0px;
-    background-color: #3A143F;
-
+    margin: 20px 0px;
+  }
 }
 /* ------------------------HOME SECOND------------------------ */
-.courses{
-    /* border: 1px solid green; */
-    height: 90vh;
-    position: relative;
-    padding-top: 80px;
-    background-color: rgb(199, 203, 206);
-    padding-bottom: 150px;
+.courses {
+  /* border: 1px solid green; */
+  height: 90vh;
+  position: relative;
+  padding-top: 80px;
+  background-color: rgb(199, 203, 206);
+  padding-bottom: 150px;
 }
 
-.courses h1{
-    margin: 10px auto 40px auto;
-    text-align: center;
-    font-size: 50px;
-    /* border: 1px solid brown; */
+.courses h1 {
+  margin: 10px auto 40px auto;
+  text-align: center;
+  font-size: 50px;
+  /* border: 1px solid brown; */
 }
-.back_image{
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 90vh;
-    overflow: hidden;
+.back_image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 90vh;
+  overflow: hidden;
 }
-.back_image img{
-    opacity: 0.4;
-    width: 100%;
+.back_image img {
+  opacity: 0.4;
+  width: 100%;
 }
-
-
 
 /* -------------------------------why us ---------------------------- */
 
-.whyus{
-    padding: 50px 0px;
+.whyus {
+  padding: 50px 0px;
+  text-align: center;
+  color: #2f2d52;
+}
+.whyus h1 {
+  font-size: 50px;
+}
+
+.whyus p {
+  font-size: 17px;
+  font-weight: 400;
+}
+.whyus h3 {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.whyus .bulltex {
+  text-align: center;
+  padding: 50px;
+  margin: 0px auto;
+}
+.whyus .bulltex .ico {
+  width: 90px;
+  height: 90px;
+  max-width: 150px;
+  max-height: 150px;
+  margin: 20px auto 20px auto;
+  border-radius: 50%;
+}
+
+.whyus .bulltex .ora {
+  padding-top: 7px;
+  border: 3px solid #f3dfbd;
+}
+.whyus .bulltex .blu {
+  border: 3px solid #dad4ff;
+  padding-top: 10px;
+}
+.whyus .bulltex .gre {
+  border: 3px solid #aff5dc;
+  padding-top: 10px;
+}
+@media screen and (max-width: 700px) {
+  .whyus .bulltex {
     text-align: center;
-    color: #2F2D52;
-    /* border: 1px solid blue; */
-}
-.whyus h1{
-    font-size: 50px;
-}
-
-.whyus p{
-    font-size: 17px;
-    font-weight: 400;
-}
-.whyus h3{
-    font-size: 25px;
-    font-weight: 500;
-}
-
-.whyus .bulltex{
-    text-align: center;
-    padding: 50px;
-
-}
-.whyus .bulltex .ico{
-    width: 90px ;
-    height: 90px ;
-    max-width: 150px;
-    max-height: 150px;
-    margin: 50px auto 20px auto;
-    border-radius: 50%;
-    /* vertical-align: middle; */
-} 
-
-.whyus .bulltex .ora{
-    padding-top: 7px;
-    border: 3px solid #F3DFBD;
-    /* border: 3px solid #F3DFBD; */
-    /* background-color: #F3DFBD; */
-
-}
-.whyus .bulltex .blu{
-    border: 3px solid #DAD4FF;
-    padding-top: 10px;
-}
-.whyus .bulltex .gre{
-    border: 3px solid #AFF5DC;
-    padding-top: 10px;
+    padding: 10px;
+    width: 70%;
+  }
+  .whyus .bulltex .ico {
+    margin: 30px auto 20px auto;
+  }
 }
 
 /* ---------------------------------homecourse------------------------ */
-.homecourse{
-    background-color: #43256F;
-    /* height: 80vh; */
-    padding: 30px 0px;
+.homecourse {
+  background-color: #43256f;
+  /* height: 80vh; */
+  padding: 30px 0px;
 }
 
-.homecourse h2{
-    color: #F2BB4F;
-    font-size: 20px;
-    font-weight: 500;
-    text-align: center;
+.homecourse h2 {
+  color: #f2bb4f;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
 }
-.homecourse h1{
-    color: #ffffff;
-    font-size: 40px;
-    margin: 15px 0px;
-    font-weight: 500;
-    text-align: center;
+.homecourse h1 {
+  color: #ffffff;
+  font-size: 40px;
+  margin: 15px 0px;
+  font-weight: 500;
+  text-align: center;
 }
-.homecourse h1::after{
-    display: block;
-    content: " ";
-    background-color: #F2BB4F;
-    width: 20%;
-    margin: 15px auto;
-    height: 6px;
+.homecourse h1::after {
+  display: block;
+  content: " ";
+  background-color: #f2bb4f;
+  width: 20%;
+  margin: 15px auto;
+  height: 6px;
 }
-
 
 /* ---------------------card ---------------------- */
-.homecourse .cardmedia{
-    margin: 5% auto;
-    height: 230px;
-    width: 90%;
+.homecourse .cardmedia {
+  margin: 5% auto;
+  height: 230px;
+  width: 90%;
 }
-.maincard{
-    background-color: #634491 !important;
+.maincard {
+  background-color: #634491 !important;
+  /* border: 1px solid red; */
+  /* margin: 0px auto; */
 }
-.maincard1{
-    /* border: 1px solid rgb(0, 255, 42); */
+.maincard1 {
+  /* border: 1px solid rgb(0, 255, 42); */
 }
-.cardheading{
-    font-size: 35px !important;
-    text-transform: capitalize;
-    color: #F1BB51;
-    text-align: left !important;
+.cardheading {
+  font-size: 35px !important;
+  text-transform: capitalize;
+  color: #f1bb51;
+  text-align: left !important;
 }
-.homecourse .para{
-    text-align: left !important;
-    color: white;
-    font-size: 16px !important;
-    font-weight: 300 !important;
-    font-style: italic;
+.homecourse .para {
+  text-align: left !important;
+  color: white;
+  font-size: 16px !important;
+  font-weight: 300 !important;
+  font-style: italic;
 }
-.homecourse .cardbutton{
+.homecourse .cardbutton {
   height: 4rem;
   font-size: 15px;
   border: 1px solid;
@@ -266,122 +307,148 @@
   margin: 0px 10px 10px 10px;
   padding: 1px 20px;
   border-color: white;
-  background-color: #F1BB51;
+  background-color: #f1bb51;
   color: white;
 }
 
 .homecourse .cardbutton:hover {
   background-color: white;
-  border-color: #43256F ;
-  color: #43256F;
+  border-color: #43256f;
+  color: #43256f;
 }
 
-.homecourse .cardpart{
-    margin: 50px 0px;
+.homecourse .cardpart {
+  margin: 50px 0px;
 }
 
-
-/* ---------------------------homesmall description ------------------- */
-.homesmalldes{
-    min-height: 90vh;
-    margin: 80px 0px;
-}
-.homesmalldes .firsthead{
-    text-align: center;
-    margin: 50px 0px;
-    color: #2f2d52;
-    font-size: 50px;
-    font-weight: 600;
-}
-.homesmalldes .smalldescont{
-    width: 70%;
-    margin: 50px auto;
-}
-.homesmalldes .smalldescont h1{
-    font-size: 28px;
-    font-weight: 500;
-}
-.homesmalldes .smalldescont p{
-    margin: 20px 0px;
-    font-size: 17px;
-    font-weight: 400;
-}
-.homesmalldes .smalldesimg{
-    width: 300px;
-    height: 300px;
-    margin: 30px auto;
-    border: 15px solid #634491;
-    border-radius: 50%;
-    text-align: center;
-    overflow: hidden;
-    /* position: relative; */
-}
-.glue{
-    /* border: 1px solid brown; */
-}
-
-.homesmalldes .smalldesimg img{
-    /* position: absolute; */
+.cardoo{
+    width: 90%;
+    margin: 0px auto;
     /* border: 1px solid red; */
-    /* left: 40%; */
-    /* left: 60%; */
-    width: auto;
-    height: 100%;
-    /* max-width: 300px; */
-    max-height: 100%;
+    max-height: 550px;
+    /* margin: 0px 15px; */
+    /* max-width: 345px; */
 }
+/* ---------------------------homesmall description ------------------- */
+.homesmalldes {
+  /* min-height: 90vh; */
+  margin: 80px 0px 30px 0px;
+}
+.homesmalldes .firsthead {
+  text-align: center;
+  margin: 20px 0px;
+  color: #2f2d52;
+  font-size: 50px;
+  font-weight: 600;
+}
+.homesmalldes .smalldescont {
+  width: 70%;
+  margin: 50px auto 20px 0px;
+}
+.homesmalldes .smalldescont h1 {
+  font-size: 28px;
+  font-weight: 500;
+}
+.homesmalldes .smalldescont p {
+  margin: 20px 0px;
+  font-size: 17px;
+  font-weight: 400;
+}
+.homesmalldes .smalldesimg {
+  width: 300px;
+  height: 300px;
+  margin: 40px auto;
+  border: 15px solid #634491;
+  border-radius: 50%;
+  text-align: center;
+  overflow: hidden;
+  /* position: relative; */
+}
+.glue {
+  /* border: 1px solid brown; */
+  width: 100%;
+}
+
+.homesmalldes .smalldesimg img {
+  /* position: absolute; */
+  /* border: 1px solid red; */
+  /* left: 40%; */
+  /* left: 60%; */
+  margin: 0px auto;
+  width: auto;
+  height: 100%;
+  /* max-width: 300px; */
+  max-height: 100%;
+}
+
+@media screen and (max-width: 604px) {
+  .homesmalldes .smalldescont {
+    /* width: 70%; */
+    margin: 50px auto 20px auto;
+  }
+}
+
 /* ----------------------------accordian--------------------- */
-.homeaccor .heading{
-    text-align: center;
+.homeaccor .heading {
+  text-align: center;
+  width: 100%;
 }
-.homeaccor .homeaccordian{
-    margin: 30px auto;
+.homeaccor .heading img {
+  /* width: 100%; */
+  max-width: 100%;
 }
-.typeheading{
-    font-size: 17px !important;
-    font-weight: 500 !important;
+.homeaccor .homeaccordian {
+  margin: 30px auto;
 }
-.typepara{
-    font-size: 15px !important;
-    margin: 0px 15px !important;
+.typeheading {
+  font-size: 17px !important;
+  font-weight: 500 !important;
 }
-.typedetail{
-    border-left: 6px solid !important;
-    border-bottom: #43256F !important;
-    /* font-size: 15px !important;
+.typepara {
+  font-size: 15px !important;
+  margin: 0px 15px !important;
+}
+.typedetail {
+  border-left: 6px solid !important;
+  border-bottom: #43256f !important;
+  /* font-size: 15px !important;
     margin: 0px 15px !important; */
 }
 
-
 /* -----------------------------homeplan------------------------- */
-.homeplan{
-    /* height: 50vh; */
-    margin: 100px 0px;
-    text-align: center;
-    background-color: #43256F;
-    padding: 100px 0px 50px 0px;
-    background-image: linear-gradient(0deg, rgba(67, 37, 111,0.9), rgba(67, 37, 111,0.9)), url("/src/Image/grt.jpg");
-    /* background-image: url("/src/Image/grt.jpg"); */
-    background-position: 50% 50%;
+.homeplan {
+  /* height: 50vh; */
+  margin: 100px 0px;
+  text-align: center;
+  background-color: #43256f;
+  padding: 100px 0px 50px 0px;
+  background-image: linear-gradient(
+      0deg,
+      rgba(67, 37, 111, 0.9),
+      rgba(67, 37, 111, 0.9)
+    ),
+    url("/src/Image/grt.jpg");
+  /* background-image: url("/src/Image/grt.jpg"); */
+  background-position: 50% 50%;
 }
-.homeplan h2{
-    text-transform: uppercase;
-    font-size: 30px;
-    color: #F2BB4F;
-    /* color: white; */
+.homeplan h2 {
+  text-transform: uppercase;
+  font-size: 30px;
+  color: #f2bb4f;
+  /* color: white; */
 }
-.homeplan h1{
-    font-size: 120px;
-    font-weight: 700;
-    color: white;
-    /* color: #F2BB4F; */
+.homeplan h1 {
+  font-size: 120px;
+  font-weight: 700;
+  color: white;
+  /* color: #F2BB4F; */
 }
-.homeplan p{
-    color: #F2BB4F;
-    font-size: 20px;
-    margin: 0px auto;
+.homeplan p {
+  color: #f2bb4f;
+  font-size: 20px;
+  margin: 0px auto;
 }
-.homeplan .cardbutton{
+.homeplan .cardbutton {
   height: 4.4rem;
   font-size: 18px;
   font-weight: 500;
@@ -391,56 +458,70 @@
   margin: 50px auto 10px auto;
   padding: 1px 30px;
   border-color: white;
-  background-color: #F1BB51;
+  background-color: #f1bb51;
   color: white;
 }
 
 .homeplan .cardbutton:hover {
   background-color: white;
-  border-color: #43256F ;
-  color: #43256F;
+  border-color: #43256f;
+  color: #43256f;
+}
+
+@media screen and (max-width: 1024px) {
+  .homeplan h1 {
+    line-height: 01em;
+  }
+  .homeplan .cardbutton {
+    margin: 20px auto 10px auto;
+  }
 }
 
 /* ---------------------------contact--------------------------- */
-.contact{
-    margin: 150px auto 80px auto;
-    background-color: #3d3b79;
-    /* background-color: #FF693E; */
-    border-radius: 10px;
-    padding: 100px 50px 70px 50px;
-    color: white;
-    position: relative;
+.contact {
+  margin: 150px auto 80px auto;
+  background-color: #3d3b79;
+  /* background-color: #FF693E; */
+  border-radius: 10px;
+  padding: 100px 50px 70px 50px;
+  color: white;
+  position: relative;
 }
 
-.contact h1{
-    font-size: 50px;
+.contact h1 {
+  font-size: 50px;
 }
-.contact p{
-    font-size: 17px;
-    margin-top: 10px;
+.contact p {
+  font-size: 17px;
+  margin-top: 10px;
 }
-.contact .buttonu{
-    margin: 20px auto 10px auto;
+.contact .buttonu {
+  margin: 20px auto 10px auto;
 }
 
-.contact Button{
-    height: 5.5rem;
-    font-size: 18px;
-    border: 1px solid;
-    border-radius: 15px;
-    padding: 10px 30px;
-    background-color: #090761;
-    color: white;
+.contact Button {
+  height: 5.5rem;
+  font-size: 18px;
+  border: 1px solid;
+  border-radius: 15px;
+  padding: 10px 30px;
+  background-color: #090761;
+  color: white;
 }
-.contact button:hover{
-    background-color: #14125a;
-    border-color: #14125a ;
+.contact button:hover {
+  background-color: #14125a;
+  border-color: #14125a;
 }
-.contact .teaching{
-    position:absolute;
-    bottom:0;
-    right: 8%;
-    margin:auto;
-    /* margin-top: 10px; */
-    /* padding-top: 20px; */
+.contact .teaching {
+  position: absolute;
+  bottom: 0;
+  right: 8%;
+  margin: auto;
+  /* margin-top: 10px; */
+  /* padding-top: 20px; */
+}
+
+@media screen and (max-width: 400px) {
+  /* .texthead h5 {
+    } */
 }

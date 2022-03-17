@@ -18,7 +18,7 @@ function Keyfeature() {
                 </div>
                 <div className="blks">
                     <div className="row">
-                        <div className="col-md-3 col-sm-3 col-lg-3">
+                        <div className="col-md-6 col-sm-12 col-lg-3">
                             <div className="blkstext">
                                 <h1>
                                     Projects
@@ -28,7 +28,7 @@ function Keyfeature() {
                                 </h2>
                             </div>
                         </div>
-                        <div className="col-md-3 col-sm-3 col-lg-3">
+                        <div className="col-md-6 col-sm-12 col-lg-3">
                             <div className="blkstext">
                                 <h1>
                                     Projects
@@ -38,7 +38,7 @@ function Keyfeature() {
                                 </h2>
                             </div>
                         </div>
-                        <div className="col-md-3 col-sm-3 col-lg-3">
+                        <div className="col-md-6 col-sm-12 col-lg-3">
                             <div className="blkstext">
                                 <h1>
                                     Projects
@@ -48,7 +48,7 @@ function Keyfeature() {
                                 </h2>
                             </div>
                         </div>
-                        <div className="col-md-3 col-sm-3 col-lg-3">
+                        <div className="col-md-6 col-sm-12 col-lg-3">
                             <div className="blkstext">
                                 <h1>
                                     Projects

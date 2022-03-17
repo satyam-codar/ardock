@@ -17,9 +17,6 @@ function Coursessecond() {
                     <h2>
                         WE CREATE BRANDS THE WORLD LOVES
                     </h2>
-                    {/* <h1>
-                        About Design Studio
-                    </h1> */}
                     <p>
                         Paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id suscipit ex. Suspendisse rhoncus laoreet purus . Phasellus sed efficitur dolor, et ultricies sapien. Quisque fringilla sit amet dolor commodo efficitur. Aliquam et sem odio.
                         In ullamcorper nisi nunc, et molestie ipsum iaculis sit amet.
@@ -38,7 +35,7 @@ function Coursessecond() {
             <div className="allcourses">
                 <div className="container-xxl rahubi">
                     <div className="row">
-                        <div className="col-lg-6 firstrow">
+                        <div className="col-lg-6 firstrow col-md-6">
                             <div className="gullu">
 
                             </div>
@@ -46,7 +43,7 @@ function Coursessecond() {
                             <MultiActionAreaCard heading={courseOne.heading} description={courseOne.description} />
                             <MultiActionAreaCard heading={courseOne.heading} description={courseOne.description} />
                         </div>
-                        <div className="col-lg-6">
+                        <div className="col-lg-6  col-md-6">
 
                             <MultiActionAreaCard heading={courseOne.heading} description={courseOne.description} />
                             <MultiActionAreaCard heading={courseOne.heading} description={courseOne.description} />

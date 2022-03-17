@@ -14,7 +14,7 @@ function Whyus() {
                 <p>Discover your Perfect program in our courses</p>
                 <div className="bulletss">
                     <div className="row">
-                        <div className="col-md-4 col-lg-4 col-sm-4">
+                        <div className="col-md-6 col-lg-4 col-sm-12">
                             <div className="bulltex">
                                 <div className="ico ora">
                                     <script src="https://cdn.lordicon.com/lusqsztk.js"></script>
@@ -33,7 +33,7 @@ function Whyus() {
                                 </p>
                             </div>
                         </div>
-                        <div className="col-md-4 col-lg-4 col-sm-4">
+                        <div className="col-md-6 col-lg-4 col-sm-12">
                             <div className="bulltex">
                                 <div className="ico blu">
                                     <script src="https://cdn.lordicon.com/lusqsztk.js"></script>
@@ -52,7 +52,7 @@ function Whyus() {
                                 </p>
                             </div>
                         </div>
-                        <div className="col-md-4 col-lg-4 col-sm-4">
+                        <div className="col-md-6 col-lg-4 col-sm-12">
                             <div className="bulltex">
                                 <div className="ico gre">
                                     <script src="https://cdn.lordicon.com/lusqsztk.js"></script>

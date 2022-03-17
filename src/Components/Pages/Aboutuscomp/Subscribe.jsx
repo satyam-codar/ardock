@@ -1,45 +1,28 @@
 import React from 'react'
 import $ from 'jquery';
-// import { MDBContainer, MDBInputGroup, MDBBtn, MDBInput } from "mdbreact";
+
 import { Button } from '@mui/material';
-// import { MDBContainer, MDBInputGroup, MDBDropdown, MDBDropdownToggle, MDBIcon, MDBDropdownMenu, MDBDropdownItem } from "mdbreact";
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 
-import {  BsLinkedin, BsInstagram, BsYoutube } from 'react-icons/bs';
+import { BsLinkedin, BsInstagram, BsYoutube } from 'react-icons/bs';
 import { FaFacebookF, FaLinkedinIn } from 'react-icons/fa';
 
 
 function Subscribe() {
     const PostToGoogle = async (e) => {
         e.preventDefault();
-        // var field1 = $("#nameField").val();
         var field2 = $("#emailField").val();
-        // var field3 = $("#mobField").val();
-        // var field4 = $("#cinema").val();
-
-        // if (field1 === "") {
-        //     alert('Please Fill Your Name');
-        //     document.getElementById("nameField").focus();
-        //     return false;
-        // }
         if (field2 === "") {
             alert('Please Fill Your Email');
             document.getElementById("emailField").focus();
             return false;
         }
-        // if (field3 === ""
-        // ) {
-        //     alert('Please Fill Your Mobile Number');
-        //     document.getElementById("mobField").focus();
-        //     return false;
-        // }
 
 
         $.ajax({
             url: "https://docs.google.com/forms/u/5/d/e/1FAIpQLSe28W5GxgYb0s_jBIIxtMmLHBtnW4rK_R_LrIQPsshqHpvA4Q/formResponse?",
-            // url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSchGAXI0z8Qsw0na34X-zQwWRc5srn9cmFgkAClYVSrIdcDgg/formResponse?",
-            data: {  "entry.525768553": field2},
+            data: { "entry.525768553": field2 },
             type: "POST",
             dataType: "xml",
             success: function (d) {
@@ -70,37 +53,39 @@ function Subscribe() {
                             <div className="formbox">
                                 <Box
                                     component="form"
-                                    sx={{
-                                        '& > :not(style)': { m: 1, width: '25ch' },
-                                    }}
+                                    // sx={{
+                                    //     '& > :not(style)': { m: 1, width: '25ch' },
+                                    // }}
+                                    className='subscribeform'
                                     noValidate
                                     autoComplete="off"
-                                    id="form" target="_self" onSubmit={PostToGoogle} action="" autocomplete="off" 
+                                    id="form" target="_self" onSubmit={PostToGoogle} action="" autocomplete="off"
                                 >
                                     <TextField label="Email Id" color="secondary" focused className='textfieldform' id="emailField" name="entry.525768553" />
                                     <Button type="submit" variant="contained" id="send" value="Submit" >Subscribe</Button>
                                 </Box>
                                 <h3 id="success-msg1">
-                                    You have successfully subscibed ARDOCK newsletter. 
+                                    You have successfully subscibed ARDOCK newsletter.
                                 </h3>
                             </div>
-                            <div className="formsocial"><div className="social">
-                                <a href="https://www.facebook.com/" target="_blank" >
-                                    <FaFacebookF size={30} />
-                                </a>
-                            </div>
+                            <div className="formsocial">
+                                <div className="social">
+                                    <a href="https://www.facebook.com/" target="_blank" >
+                                        <FaFacebookF size={30} />
+                                    </a>
+                                </div>
                                 <div className="social">
                                     <a href="https://www.facebook.com/" target="_blank" >
                                         <BsInstagram size={30} />
                                     </a>
                                 </div>
                                 <div className="social">
-                                    <a  href="https://www.facebook.com/" target="_blank" >
+                                    <a href="https://www.facebook.com/" target="_blank" >
                                         <BsLinkedin size={30} />
                                     </a>
                                 </div>
                                 <div className="social">
-                                    <a  href="https://www.facebook.com/" target="_blank" >
+                                    <a href="https://www.facebook.com/" target="_blank" >
                                         <BsYoutube size={30} />
                                     </a>
                                 </div>

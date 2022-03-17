@@ -9,7 +9,6 @@ export class Home_second extends Component {
       <div>
         <div className="courses">
           <div className="back_image">
-            {/* sdfa;jfa;l */}
             <img src="images/boku.jpg" alt="sdfafa" />
           </div>
           <div className="container">

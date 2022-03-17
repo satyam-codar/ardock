@@ -6,15 +6,15 @@ function Teamfirst() {
             <div className="container">
                 <div className="team">
                     <div className="row no-gutters">
-                        <div className="col-md-6 col-lg-6 col-sm-12">
+                        <div className="col-md-12 col-lg-6 col-sm-12">
                             <div className="image imagee">
                                 <img src="/Images/firstone.jpg" alt="" />
                             </div>
                         </div>
-                        <div className="col-md-6 col-lg-6 col-sm-12">
+                        <div className="col-md-12 col-lg-6 col-sm-12">
                             <div className="image">
-                                <div className="smallpic">
-                                    <div className="indipic">
+                                <div className="row no-gutters">
+                                    <div className="col-md-6 col-lg-6 col-sm-6 col-6 indipic1">
                                         <div className="text">
                                         <h1>
                                             Our team
@@ -25,13 +25,13 @@ function Teamfirst() {
                                         </p>
                                             </div>
                                     </div>
-                                    <div className="indipic">
+                                    <div className="col-md-6 col-lg-6 col-sm-6 col-6 indipic1">
                                         <img src="/Images/three.jpg" alt="" />
                                     </div>
-                                    <div className="indipic">
+                                    <div className="col-md-6 col-lg-6 col-sm-6 col-6 indipic1">
                                         <img src="/Images/one.jpg" alt="" />
                                     </div>
-                                    <div className="indipic">
+                                    <div className="col-md-6 col-lg-6 col-sm-6 col-6 indipic1">
                                         <img src="/Images/two.jpg" alt="" />
                                     </div>
                                 </div>

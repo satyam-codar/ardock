@@ -14,24 +14,26 @@ export class Home_first extends Component {
           <div className="container">
             <div className="fur_home">
               <div className="row">
-                <div className="col-md-6 col-lg-6 col-xl-6">
+                <div className="col-md-12 col-lg-6 col-xl-6">
                   <div className="first_content">
                     <h1 className="first">
                       Ardock
                     </h1>
-                    <h1 className="second"> 
-                    foundations
+                    <h1 className="second">
+                      foundations
                     </h1>
                     <h2>
-                      Ullamcorper malesuada proin libero nunc. Id semper risus in hendrerit gravida. Vulputate  sagittis aliquam malesuada bibendum. 
+                      Ullamcorper malesuada proin libero nunc. Id semper risus in hendrerit gravida. Vulputate  sagittis aliquam malesuada bibendum.
                     </h2>
                     <div className="first_home_button">
-                      <Stack direction="row" spacing={2}>
-                        <Button className="butoutlined"  color="secondary">
-                          <a a href="https://docs.google.com/forms/d/e/1FAIpQLSelDZs8ZQMX9cMqJcKtjTmcetD8BP4tkJMcKS7Ajnsd3Kh-qg/viewform?usp=sf_link" target="_blank" >
-                          Book free trial
+                      <Stack direction="row" spacing={1}>
+                        <Button className="butoutlined" color="secondary">
+                          <a href="https://docs.google.com/forms/d/e/1FAIpQLSelDZs8ZQMX9cMqJcKtjTmcetD8BP4tkJMcKS7Ajnsd3Kh-qg/viewform?usp=sf_link" target="_blank" >
+                            Book free trial
                           </a>
                         </Button>
+                      {/* </Stack>
+                      <Stack direction="row" spacing={2}> */}
                         <Button variant="outlined" color="secondary">
                           <Link to='/Contactus'>Contact Us</Link>
                         </Button>
@@ -39,13 +41,9 @@ export class Home_first extends Component {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-6 col-lg-6 col-xl-6">
+                <div className="col-md-12 col-lg-6 col-xl-6">
                   <div className="first_image">
-                    {/* <div className="relback">
-                      <img src="/Images/blob.svg" alt="" />
-                    </div> */}
                     <div className="childimage">
-                      {/* <img src="images/children.jpg" alt="" /> */}
                     </div>
                   </div>
                 </div>

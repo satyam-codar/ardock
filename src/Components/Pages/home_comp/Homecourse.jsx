@@ -12,11 +12,14 @@ function Homecourse() {
                 <h1>
                     Featured courses
                 </h1>
-                <div className="cardpart">
+            </div>
+            <div className="cardpart">
+                <div className="container-fluid">
+
                     {/* <MultiActionAreaCard/> */}
-                    <Courseslider/>
-                </div>
+                    <Courseslider />
                     {/* <img src="/Images/bokesh.jpg" alt="" /> */}
+                </div>
             </div>
         </div>
     )

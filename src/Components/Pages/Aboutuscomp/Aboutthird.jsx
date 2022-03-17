@@ -6,7 +6,7 @@ function Aboutthird() {
             <div className="container">
                 <div className="aboutthirdtext">
                     <div className="row">
-                        <div className="col-md-4 col-sm-4 col-lg-4">
+                        <div className="col-md-6 col-sm-12 col-lg-4">
                             <div className="abtthirdtext">
                                 <div className="image">
                                     <img src="/Images/woman.jpg" alt="csdfdfbd" />
@@ -21,7 +21,7 @@ function Aboutthird() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-4 col-sm-4 col-lg-4">
+                        <div className="col-md-6 col-sm-12 col-lg-4">
                             <div className="abtthirdtext">
                                 <div className="image">
                                     <img src="/Images/woman.jpg" alt="" />
@@ -36,7 +36,7 @@ function Aboutthird() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-4 col-sm-4 col-lg-4">
+                        <div className="col-md-6 col-sm-12 col-lg-4">
                             <div className="abtthirdtext">
                                 <div className="image">
                                     <img src="/Images/woman.jpg" alt="" />

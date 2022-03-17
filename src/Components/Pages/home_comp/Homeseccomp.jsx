@@ -6,6 +6,15 @@ function Homeseccomp() {
             <div className="container">
                 <div className="row">
                     <div className="col-md-6 col-lg-6 col-sm-12">
+                        <div className="homeseccompheading">
+                            <h2>
+                                Flexible scheduling and self
+                                learning make it easier to fit
+                                studying into your busy life
+                            </h2>
+                        </div>
+                    </div>
+                    <div className="col-md-6 col-lg-6 col-sm-12">
                         <div className="homeseccomptext">
                             <p>
                                 Article evident arrived express highest men did boy. Mistress sensible
@@ -23,15 +32,6 @@ function Homeseccomp() {
                                 Scale whole downs often leave not eat. An expression reasonably
                                 cultivated indulgence mr he surrounded instrument.
                             </p>
-                        </div>
-                    </div>
-                    <div className="col-md-6 col-lg-6 col-sm-12">
-                        <div className="homeseccompheading">
-                            <h2>
-                                Flexible scheduling and self
-                                learning make it easier to fit
-                                studying into your busy life
-                            </h2>
                         </div>
                     </div>
 

@@ -1,5 +1,4 @@
 .teamfirst {
-  height: 90vh;
   padding: 50px;
   background-image: url("/src/Image/final1.svg");
   background-repeat: no-repeat;
@@ -20,47 +19,58 @@
 }
 
 .teamfirst .imagee img {
-  width: auto;
   height: 500px;
-  margin-left: -100px;
-  max-height: 100%;
+  display: block;
+    width: 100%;
+    object-fit: cover;
 }
 
-.teamfirst .image .smallpic {
-  display: flex;
-  flex-wrap: wrap;
-  height: 500px;
-  flex-direction: row;
-  overflow: hidden;
-}
-
-.teamfirst .indipic {
-  flex: 50%;
-  order: 1;
+.indipic1{
   height: 250px;
-  overflow: hidden;
 }
-.indipic img {
-  margin-top: -60px;
-  width: 100%;
+.indipic1 img{
+  display: block;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  /* border: 1px solid rgb(15, 161, 206); */
 }
-.indipic .text {
+
+.indipic1 .text {
   color: white;
   margin: 50px auto;
   padding: 0px 20px;
 }
-.indipic .text h1 {
+.indipic1 .text h1 {
   font-size: 33px;
   font-weight: 500;
 }
-.indipic .text p {
+.indipic1 .text p {
   font-size: 15px;
   font-weight: 400;
 }
 
+.rahum{
+  /* border: 1px solid red; */
+}
+
+@media screen and (max-width: 604px) {
+  .teamsecond{
+    margin: 100px 10px;
+  }
+}
+@media screen and (max-width: 554px) {
+  .teamfirst{
+    padding: 0px 0px !important;
+    background-size: auto !important;
+    background-repeat: repeat !important;
+  }
+}
+
+
 /* ---------------------------------teamsecond-------------------- */
 .teamsecond {
-  margin: 100px;
+  margin: 100px auto;
 }
 .teamsecond .head {
   text-align: center;
@@ -84,10 +94,12 @@
     height: 350px;
     object-fit: cover;
 }
+
 .teamsecond h1{
     font-size: 20px;
     font-weight: 600;
 }
+
 .teamsecond .teachdes {
     color: white;
     width: 70%;
@@ -104,6 +116,12 @@
     text-align: center;
     display: inline-block;
 }
+
 .teamsecond .socially{
     margin-top: 15px;
+}
+@media screen and (max-width: 604px) {
+  .teamsecond{
+    margin: 100px 10px;
+  }
 }

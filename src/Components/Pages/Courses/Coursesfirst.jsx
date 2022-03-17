@@ -13,7 +13,14 @@ function Coursesfirst() {
                     Our Courses
                 </h2>
                 <h1>
-                    Back to ardock classes
+                    Back to
+                </h1>
+
+                <h1 className='main'>
+                    ardock 
+                </h1>
+                <h1>
+                    classes
                 </h1>
                 <div className="first_course_button">
                     <Stack direction="row" spacing={2}>

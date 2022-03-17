@@ -8,7 +8,7 @@ function Aboutchair() {
         <div className="container">
             <div className='aboutchair'>
                 <div className="row">
-                    <div className="col-md-6 col-lg-6 col-sm-6">
+                    <div className="col-md-6 col-lg-6 col-sm-12">
                         <div className="chairmanmessage">
 
                             <h1>
@@ -26,7 +26,7 @@ function Aboutchair() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-6 col-lg-6 col-sm-6">
+                    <div className="col-md-6 col-lg-6 col-sm-12">
                         <div className="chairimage">
 
                             <img src="/Images/chairman.jpg" alt="" />
