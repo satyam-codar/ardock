@@ -1,0 +1,47 @@
+{
+  "hosting": {
+    
+    "redirects": [ 
+      {
+    "source": "/Home",
+    "destination": "/",
+    "type": 301
+  },
+      {
+    "source": "/About",
+    "destination": "/#/About",
+    "type": 304
+  },
+  {
+    "source": "/ourteam",
+    "destination": "/#/ourteam",
+    "type": 304
+  }
+  ,
+  {
+    "source": "/Courses",
+    "destination": "/#/Courses",
+    "type": 304
+  }
+  ,
+  {
+    "source": "/Contactus",
+    "destination": "/#/Contactus",
+    "type": 304
+  }
+  ,
+  {
+    "source": "/Indipage",
+    "destination": "/#/Indipage",
+    "type": 304
+  }
+ ]
+,
+    "public": "build",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
