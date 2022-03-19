@@ -26,13 +26,13 @@ function Teamfirst() {
                                             </div>
                                     </div>
                                     <div className="col-md-6 col-lg-6 col-sm-6 col-6 indipic1">
-                                        <img src="/Images/three.jpg" alt="" />
+                                        <img src="/Images/three.jpg" alt="teachers" />
                                     </div>
                                     <div className="col-md-6 col-lg-6 col-sm-6 col-6 indipic1">
-                                        <img src="/Images/one.jpg" alt="" />
+                                        <img src="/Images/one.jpg" alt="teachers" />
                                     </div>
                                     <div className="col-md-6 col-lg-6 col-sm-6 col-6 indipic1">
-                                        <img src="/Images/two.jpg" alt="" />
+                                        <img src="/Images/two.jpg" alt="teachers" />
                                     </div>
                                 </div>
                             </div>

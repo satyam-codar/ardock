@@ -14,7 +14,7 @@ function Keyfeature() {
                     </p>
                 </div>
                 <div className="imagu">
-                    <img src="/Images/team.jpg" alt="" />
+                    <img src="/Images/team.jpg" alt="teamwork by children" />
                 </div>
                 <div className="blks">
                     <div className="row">

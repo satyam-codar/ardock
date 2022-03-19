@@ -9,7 +9,7 @@ function Contfirst() {
                     <div className="row">
                         <div className="col-sm-12 col-md-6 col-lg-6">
                             <div className="image">
-                                <img src="/Images/contactman.png" alt="" />
+                                <img src="/Images/contactman.png" alt="man pointing right" />
                             </div>
                         </div>
                         <div className="col-sm-12 col-md-6 col-lg-6">

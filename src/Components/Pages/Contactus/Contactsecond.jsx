@@ -26,7 +26,7 @@ function Contactsecond() {
                 </div>
                 <div className="flexcontenttwo">
                     <div className="image">
-                        <img src="/Images/g.jpg" alt="" />
+                        <img src="/Images/g.jpg" alt="child studying" />
                     </div>
                 </div>
             </div>

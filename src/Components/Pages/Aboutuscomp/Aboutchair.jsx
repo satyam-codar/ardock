@@ -29,7 +29,7 @@ function Aboutchair() {
                     <div className="col-md-6 col-lg-6 col-sm-12">
                         <div className="chairimage">
 
-                            <img src="/Images/chairman.jpg" alt="" />
+                            <img src="/Images/chairman.jpg" alt="Ardock Chairman" />
                         </div>
                     </div>
                 </div>

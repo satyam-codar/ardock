@@ -16,12 +16,14 @@
   font-size: 100px;
   font-weight: 900;
   color: #3a143f;
+  word-break: break-all;
 }
 .fur_home .second {
   margin-top: -20px;
   text-transform: capitalize;
   font-size: 80px;
   font-weight: 500;
+  word-break: break-all;
 }
 
 .fur_home h2 {
@@ -109,13 +111,24 @@
 }
 @media screen and (max-width: 500px) {
   .home_first .fur_home Button {
-    height: 7.5rem;
+    height: 5rem;
     font-size: 18px;
     border: 1px solid;
     border-radius: 55px;
     padding: 10px 30px;
     margin: 5px 5px;
   }
+}
+@media screen and (max-width: 425px) {
+  .fur_home .first {
+  font-size: 80px;
+  font-weight: 900;
+}
+.fur_home .second {
+  margin-top: -20px;
+  font-size: 60px;
+  font-weight: 500;
+}
 }
 
 
@@ -262,6 +275,7 @@
   margin: 15px 0px;
   font-weight: 500;
   text-align: center;
+  /* word-break: break-all; */
 }
 .homecourse h1::after {
   display: block;
@@ -483,18 +497,25 @@
   background-color: #3d3b79;
   /* background-color: #FF693E; */
   border-radius: 10px;
-  padding: 100px 50px 70px 50px;
+  padding: 100px 1rem 0px 50px;
+  /* border: 1px solid red; */
   color: white;
   position: relative;
 }
 
+.contact .experttext {
+  padding-bottom: 70px;
+  /* border: 1px solid brown; */
+}
 .contact h1 {
   font-size: 50px;
 }
+
 .contact p {
   font-size: 17px;
   margin-top: 10px;
 }
+
 .contact .buttonu {
   margin: 20px auto 10px auto;
 }
@@ -508,20 +529,45 @@
   background-color: #090761;
   color: white;
 }
+
 .contact button:hover {
   background-color: #14125a;
   border-color: #14125a;
 }
+
 .contact .teaching {
+  /* border: 1px solid green; */
   position: absolute;
   bottom: 0;
   right: 8%;
   margin: auto;
-  /* margin-top: 10px; */
-  /* padding-top: 20px; */
 }
 
-@media screen and (max-width: 400px) {
-  /* .texthead h5 {
-    } */
+@media screen and (max-width: 1200px) {
+  .contact .teaching {
+  /* border: 1px solid green; */
+  position: absolute;
+  bottom: 0;
+  right: 0rem;
+  margin: auto;
+}
+}
+@media screen and (max-width: 992px) {
+  .contact .teaching {
+  /* border: 1px solid green; */
+  position: absolute;
+  bottom: 0;
+  right: -6rem;
+  margin: auto;
+}
+}
+@media screen and (max-width: 768px) {
+  .contact .teaching {
+    display: none;
+  /* border: 1px solid green; */
+  position: absolute;
+  bottom: 0;
+  right: -6rem;
+  margin: auto;
+}
 }

@@ -26,7 +26,7 @@ export class Home_first extends Component {
                       Ullamcorper malesuada proin libero nunc. Id semper risus in hendrerit gravida. Vulputate  sagittis aliquam malesuada bibendum.
                     </h2>
                     <div className="first_home_button">
-                      <Stack direction="row" spacing={1}>
+                      <Stack direction={{ xs: 'column', sm: 'row', md: 'row', lg: 'row' }} spacing={1}>
                         <Button className="butoutlined" color="secondary">
                           <a href="https://docs.google.com/forms/d/e/1FAIpQLSelDZs8ZQMX9cMqJcKtjTmcetD8BP4tkJMcKS7Ajnsd3Kh-qg/viewform?usp=sf_link" target="_blank" >
                             Book free trial

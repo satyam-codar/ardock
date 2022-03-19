@@ -12,7 +12,7 @@ function Teamsecond() {
                     <div className="row">
                         <div className="col-md-6 col-lg-4 col-sm-12">
                             <div className="image">
-                                <img src="/Images/teacher1.jpg" alt="" />
+                                <img src="/Images/teacher1.jpg" alt="group of teachers" />
                             </div>
                             <div className="teachdes">
                                 <h1>
@@ -41,7 +41,7 @@ function Teamsecond() {
                         </div>
                         <div className="col-md-6 col-lg-4 col-sm-12">
                             <div className="image">
-                                <img src="/Images/teacher1.jpg" alt="" />
+                                <img src="/Images/teacher1.jpg" alt="teachers" />
                             </div>
                             <div className="teachdes">
                                 <h1>
@@ -65,7 +65,7 @@ function Teamsecond() {
                         </div>
                         <div className="col-md-6 col-lg-4 col-sm-12">
                             <div className="image">
-                                <img src="/Images/teacher1.jpg" alt="" />
+                                <img src="/Images/teacher1.jpg" alt="teachers" />
                             </div>
                             <div className="teachdes">
                                 <h1>

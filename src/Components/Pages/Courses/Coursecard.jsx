@@ -16,7 +16,7 @@ import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 
 import "./Courses.css"
-// import "./Home_com.css"
+
 function MultiActionAreaCard(props) {
     return (
         <Card className='maincard2'>
@@ -26,7 +26,7 @@ function MultiActionAreaCard(props) {
                     component="img"
                     // height="240"
                     image="/Images/first.jpg"
-                    alt="green iguana"
+                    alt="course card"
                 />
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="div" className='cardheading'>
@@ -59,9 +59,6 @@ function MultiActionAreaCard(props) {
                 </div>
                 <div className="first_course_button1">
                     <Stack direction="row" spacing={2}>
-                        {/* <Button color="secondary" className='cardbutton'>
-                                Read more
-                            </Button> */}
                         <Button className="butoutlined" color="secondary">
                             Buy Now  <MdOutlineDoubleArrow size={22} />
                         </Button>

@@ -298,12 +298,12 @@
 }
 .keyfeature .heading h1 {
   font-size: 50px;
-  /* position: relative; */
   margin: 10px 0px;
   color: #3a143f;
   text-transform: capitalize;
   text-align: center;
 }
+
 .keyfeature .heading p {
   font-weight: 400;
   font-size: 15px;
