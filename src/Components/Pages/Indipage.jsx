@@ -7,9 +7,13 @@ import Indipricing from './Indipage/Indipricing'
 import Indisecond from './Indipage/Indisecond'
 import Indisyllabus from './Indipage/Indisyllabus'
 
+import { BlogData } from './Courses_details/Details'
+
+
 function Indipage() {
   return (
     <>
+    
     <Indifirst/>
     <Indisecond/>
     <Indiaboutprof/>

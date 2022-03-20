@@ -1,4 +1,7 @@
 import * as React from 'react';
+import { Link } from 'react-router-dom';
+
+
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
@@ -20,42 +23,37 @@ import "./Courses.css"
 function MultiActionAreaCard(props) {
     return (
         <Card className='maincard2'>
+            <Link to="/Indipage">
             <CardActionArea className='maincard3' >
                 <CardMedia
                     className='cardmedia'
                     component="img"
-                    // height="240"
-                    image="/Images/first.jpg"
+                    image={props.image}
                     alt="course card"
                 />
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="div" className='cardheading'>
                         {props.heading}
-                        {/* Lizard house */}
                     </Typography>
                     <div className="author">
-                        <BiUserPin size={20} color="white" /> By Jessi lee
+                        <BiUserPin size={20} color="white" /> {props.tutor}
                     </div>
                     <div className="starrating">
-                        {/* <BsArrowRightCircleFill size={15} color="white"/> Beginner <br /> */}
-                        <IoArrowRedoCircleSharp size={18} color="white" /> Beginner <br />
-                        <BiUser size={18} color="white" /> Age 6-10
+                        <IoArrowRedoCircleSharp size={18} color="white" /> {props.level} <br />
+                        <BiUser size={18} color="white" /> Age {props.age}
                     </div>
                     <Typography variant="body2" color="text.secondary" className='para2'>
                         {props.description}
-                        {/* Lizards are a widespread group of squamate reptiles, with over 6,000
-                        species, ranging across all continents except Antarctica */}
                     </Typography>
                     <div className="starrating1">
-                        {/* <BsArrowRightCircleFill size={15} color="white"/> Beginner <br /> */}
-                        <IoArrowRedoCircleSharp size={18} color="white" /> Skills: Web development and web design <br />
-                        <RiPagesLine size={18} color="white" /> Professional certificate
+                        <IoArrowRedoCircleSharp size={18} color="white" /> Skills: {props.skills} <br />
+                        <RiPagesLine size={18} color="white" />  Professional certificate
                     </div>
                 </CardContent>
             </CardActionArea>
             <CardActions className='cardaction'>
                 <div className="price">
-                    ₹ 7,199
+                    ₹ {props.price}
                 </div>
                 <div className="first_course_button1">
                     <Stack direction="row" spacing={2}>
@@ -65,6 +63,7 @@ function MultiActionAreaCard(props) {
                     </Stack>
                 </div>
             </CardActions>
+            </Link>
         </Card>
     );
 }

@@ -20,38 +20,31 @@ import "./Components/Scrollkey/Scrollkey.css";
 import Ourteam from "./Components/Pages/Ourteam";
 import Courses from "./Components/Pages/Courses";
 import Indipage from "./Components/Pages/Indipage";
-// import ScrollToTop from "./Components/Extracomp/ScrollToTop";
-// import ScrollToTop from "./Components/Extracomp/ScrollToTop";
 
 import { Helmet, HelmetProvider } from "react-helmet-async";
+
+// import { SmoothProvider } from 'react-smooth-scrolling'
+
 
 
 function App() {
   return (
     <HelmetProvider>
       <div className="scrollbar scrollbar-night-fade">
+      {/* <SmoothProvider ease={0.3}> */}
         <Router>
           <Navbar />
-          {/* <ScrollToTop> */}
-              <Switch>
-                {/* <UseEffectScroll> */}
-                <Route exact path="/" component={Home} />
-                <Route path="/About" component={Aboutus} />
-                <Route path="/ourteam" component={Ourteam} />
-                <Route path="/Courses" component={Courses} />
-                <Route path="/Indipage" component={Indipage} />
-                <Route path="/Contactus" component={Contactus} />
-                {/* <Route path="/Gallerypage" component={Gallerypage} />
-          <Route path="/Contactus" component={Contactus} /> */}
-                {/* <Route exact path="/Login" component={Login} /> */}
-                {/* <Route path="/Login" component={Login} />
-          <Route path="/Admin" component={Admin} />
-          <Route path="/Logout" component={Logout} /> */}
-                {/* </UseEffectScroll> */}
-              </Switch>
-            <Footer />
-          {/* </ScrollToTop> */}
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/About" component={Aboutus} />
+            <Route path="/ourteam" component={Ourteam} />
+            <Route path="/Courses" component={Courses} />
+            <Route path="/Indipage" component={Indipage} />
+            <Route path="/Contactus" component={Contactus} />
+          </Switch>
+          <Footer />
         </Router>
+      {/* </SmoothProvider> */}
       </div>
     </HelmetProvider>
   );

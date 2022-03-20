@@ -134,6 +134,7 @@
   background-color: #634491 !important;
   margin: 50px auto 0px auto;
   /* width: 500px !important; */
+  border: 1px solid red;
   width: 90% !important;
   max-width: 500px !important;
   transition: all ease-in-out 0.2s !important;
@@ -212,30 +213,6 @@
   background-color: #46264b;
 }
 
-/* @media screen and (max-width: 407px) {
-  .maincard2 {
-  margin: 50px auto 0px auto;
-  width: 100% !important;
-}
-.coursessecond .cardaction .price {
-  width: 45% !important;
-  border: 1px solid red;
-}
-.coursessecond .first_course_button1 {
-  width: 55% !important;
-  border: 1px solid brown;
-  padding-right: 0px !important;
-}
-.coursessecond .first_course_button1 Button {
-  margin: 0px 0px 0px auto;
-  height: 4.2rem;
-  font-size: 15px;
-  border: 1px solid;
-  border-radius: 55px;
-  padding: 5px 25px;
-}
-} */
-
 @media screen and (max-width: 420px) {
   .maincard2 {
   margin: 50px auto 0px auto;
@@ -273,9 +250,17 @@
   width: 70%;
 }
 }
-/* @media screen and (max-width: 550px) {
-  .maincard2 {
-  margin: 50px auto 0px auto;
-  width: 350px !important;
+
+
+.firstrow{
+  border: 1px solid green;
+  height: 200px;
 }
-} */
+.allcourses .row {
+    display: flex !important;
+    flex-wrap: wrap !important;
+}
+.allcourses .row > [class*='col-'] {
+    display: flex !important;
+    flex-direction: column  !important;
+}

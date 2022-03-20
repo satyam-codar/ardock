@@ -36,9 +36,9 @@ const Navbar = () => {
             <li>
               <NavLink to="/Contactus">contact</NavLink>
             </li>
-            {/* <li>
+            <li>
                 <NavLink to="/Indipage">Guitar</NavLink>
-              </li> */}
+              </li>
             {/* <li>
               <NavLink to="/contact">Sign In </NavLink>
             </li>

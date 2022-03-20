@@ -7,26 +7,16 @@ import "./Courseslider.css"
 import MultiActionAreaCard from '../Coursecard';
 import { Hidden } from '@mui/material';
 
+import { BlogData } from '../../Courses_details/Details';
+
+
 function Courseslider() {
 
     // ---------------------------courses-----------------------------
-    const courseOne = {
-        heading: "Lizard house1",
-        description: "izards are a widespread group of squamate reptiles, with over species ranging across all continents except Antarctica",
-    };
-    const courseOne2 = {
-        heading: "Lizard house2",
-        description: "izards are a widespread group of squamate reptiles, with over species ranging across all continents except Antarctica",
-    };
-    const courseOne3 = {
-        heading: "Lizard house3",
-        description: "izards are a widespread group of squamate reptiles, with over species ranging across all continents except Antarctica",
-    };
-    const courseOne4 = {
-        heading: "Lizard house4",
-        description: "izards are a widespread group of squamate reptiles, with over species ranging across all continents except Antarctica",
-    };
 
+    const FeaturedCourses= BlogData.filter((course)=>{
+        return course.featured === "true";
+    })
 
     const NextArrow = ({ onClick }) => {
         return (
@@ -68,35 +58,14 @@ function Courseslider() {
     return (
         <div>
             <Slider {...settings} className="cardoo">
-                <div style={{ width: "360px"  }}>
-                <MultiActionAreaCard heading={courseOne.heading} description={courseOne.description} />
-                </div>
-                <div  style={{ width: "360px"   }}>
-                <MultiActionAreaCard heading={courseOne2.heading} description={courseOne2.description} />
-                </div>
-                <div  style={{ width: "360px"   }}>
-                <MultiActionAreaCard heading={courseOne3.heading} description={courseOne3.description} />
-                </div>
-                <div  style={{ width: "360px"   }}>
-                <MultiActionAreaCard heading={courseOne4.heading} description={courseOne4.description} />
-                </div>
-                <div  style={{ width: "360px"   }}>
-                <MultiActionAreaCard heading={courseOne.heading} description={courseOne.description} />
-                </div>
-                <div  style={{ width: "360px"   }}>
-                <MultiActionAreaCard heading={courseOne2.heading} description={courseOne2.description} />
-                </div>
-                <div  style={{ width: "360px"   }}>
-                <MultiActionAreaCard heading={courseOne3.heading} description={courseOne3.description} />
-                </div>
-                <div  style={{ width: "360px"   }}>
-                <MultiActionAreaCard heading={courseOne4.heading} description={courseOne4.description} />
-                </div>
-                {/* {images.map((img, idx) => (
-          <div className={idx === imageIndex ? "slide activeSlide" : "slide"}>
-            <img src={img} alt={img} />
-          </div>
-        ))} */}
+                
+                {FeaturedCourses.map((course)=>(
+                    <div style={{ width: "360px" }}>
+                        <MultiActionAreaCard image={course.imageUrl} heading={course.title} description={course.description} />
+                    </div>
+                ))
+                }
+
             </Slider>
         </div>
     )

@@ -21,7 +21,7 @@ function MultiActionAreaCard(props) {
                     className='cardmedia'
                     component="img"
                     // height="240"
-                    image="/Images/first.jpg"
+                    image={props.image}
                     alt="green iguana"
                 />
                 <CardContent>

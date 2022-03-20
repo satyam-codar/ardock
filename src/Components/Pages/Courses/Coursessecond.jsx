@@ -5,6 +5,9 @@ import MultiActionAreaCard from './Coursecard'
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 
+import { BlogData } from '../Courses_details/Details';
+
+
 function Coursessecond() {
     const courseOne = {
         heading: "Lizard house",
@@ -35,27 +38,23 @@ function Coursessecond() {
             <div className="allcourses">
                 <div className="container-xxl rahubi">
                     <div className="row">
-                        <div className="col-lg-6 firstrow col-md-6">
+                        {/* <div className="col-lg-6 firstrow col-md-6">
                             <div className="gullu">
 
                             </div>
-                            <MultiActionAreaCard heading={courseOne.heading} description={courseOne.description} />
-                            <MultiActionAreaCard heading={courseOne.heading} description={courseOne.description} />
-                            <MultiActionAreaCard heading={courseOne.heading} description={courseOne.description} />
-                        </div>
-                        <div className="col-lg-6  col-md-6">
+                        </div> */}
 
-                            <MultiActionAreaCard heading={courseOne.heading} description={courseOne.description} />
-                            <MultiActionAreaCard heading={courseOne.heading} description={courseOne.description} />
-                            <MultiActionAreaCard heading={courseOne.heading} description={courseOne.description} />
-                        </div>
+                        {BlogData.map((post) => (
+                            <div className="col-lg-6 col-md-6 col-sm-12 col-12">
+                                <MultiActionAreaCard key={post.title}  heading={post.title} image={post.imageUrl} tutor={post.tutor} level={post.level} description={post.description} age={post.age} skills={post.skills} price={post.price} />
+                            </div>
+                        ))}
+
                     </div>
                 </div>
-
-
-
             </div>
         </div>
+
     )
 }
 
