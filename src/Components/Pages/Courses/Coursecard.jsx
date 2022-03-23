@@ -23,7 +23,7 @@ import "./Courses.css"
 function MultiActionAreaCard(props) {
     return (
         <Card className='maincard2'>
-            <Link to="/Indipage">
+            <Link to= {props.nav} >
             <CardActionArea className='maincard3' >
                 <CardMedia
                     className='cardmedia'

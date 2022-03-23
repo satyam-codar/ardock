@@ -61,7 +61,7 @@ function Courseslider() {
                 
                 {FeaturedCourses.map((course)=>(
                     <div style={{ width: "360px" }}>
-                        <MultiActionAreaCard image={course.imageUrl} heading={course.title} description={course.description} />
+                        <MultiActionAreaCard image={course.imageUrl} heading={course.title} description={course.description} nav={course.nav}/>
                     </div>
                 ))
                 }

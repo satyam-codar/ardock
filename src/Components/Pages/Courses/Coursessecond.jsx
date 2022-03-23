@@ -27,7 +27,7 @@ function Coursessecond() {
                     <div className="first_course_button">
                         <Stack direction="row" spacing={2}>
                             <Button className="butoutlined" color="secondary">
-                                <a a href="https://docs.google.com/forms/d/e/1FAIpQLSelDZs8ZQMX9cMqJcKtjTmcetD8BP4tkJMcKS7Ajnsd3Kh-qg/viewform?usp=sf_link" target="_blank" >
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSelDZs8ZQMX9cMqJcKtjTmcetD8BP4tkJMcKS7Ajnsd3Kh-qg/viewform?usp=sf_link" target="_blank" >
                                     Book free trial
                                 </a>
                             </Button>
@@ -38,23 +38,17 @@ function Coursessecond() {
             <div className="allcourses">
                 <div className="container-xxl rahubi">
                     <div className="row">
-                        {/* <div className="col-lg-6 firstrow col-md-6">
-                            <div className="gullu">
-
-                            </div>
-                        </div> */}
 
                         {BlogData.map((post) => (
                             <div className="col-lg-6 col-md-6 col-sm-12 col-12">
-                                <MultiActionAreaCard key={post.title}  heading={post.title} image={post.imageUrl} tutor={post.tutor} level={post.level} description={post.description} age={post.age} skills={post.skills} price={post.price} />
+                                <MultiActionAreaCard key={post.title}  heading={post.title} image={post.imageUrl} tutor={post.tutor} level={post.level} description={post.description} age={post.age} skills={post.skills} price={post.price} nav={post.nav} />
                             </div>
                         ))}
-
+                        
                     </div>
                 </div>
             </div>
         </div>
-
     )
 }
 

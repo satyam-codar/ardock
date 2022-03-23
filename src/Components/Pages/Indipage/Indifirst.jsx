@@ -5,7 +5,7 @@ import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 
 
-function Indifirst() {
+function Indifirst(props) {
     return (
         <div className='indifirst'>
             <div className="videosection">
@@ -19,10 +19,10 @@ function Indifirst() {
                         EXECUTIVE PROGRAM
                     </h3>
                     <h1>
-                        AI for Business Leaders
+                        AI for Business Leaders {props.heading}
                     </h1>
                     <h2>
-                        Master the foundations of artificial intelligence so you can strategically implement AI in your company. <br /> Leverage machine learning technologies to power corporate growth, increase efficiency, and enhance customer experiences.
+                        {props.description} Master the foundations of artificial intelligence so you can strategically implement AI in your company. <br /> Leverage machine learning technologies to power corporate growth, increase efficiency, and enhance customer experiences.
                     </h2>
                     <div className="firstbut">
                         <Stack direction="row" spacing={2} className="allbut">

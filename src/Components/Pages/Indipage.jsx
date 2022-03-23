@@ -10,11 +10,11 @@ import Indisyllabus from './Indipage/Indisyllabus'
 import { BlogData } from './Courses_details/Details'
 
 
+
 function Indipage() {
   return (
     <>
-    
-    <Indifirst/>
+    <Indifirst />
     <Indisecond/>
     <Indiaboutprof/>
     <Indisyllabus/>
@@ -26,3 +26,20 @@ function Indipage() {
 }
 
 export default Indipage
+
+// function Indipage() {
+//   return (
+//     <>
+
+//     <Indifirst/>
+//     <Indisecond/>
+//     <Indiaboutprof/>
+//     <Indisyllabus/>
+//     <Indipricing/>
+//     {/* <ControlledAccordions/> */}
+//     <Indifaq/>
+//     </>
+//   )
+// }
+
+// export default Indipage

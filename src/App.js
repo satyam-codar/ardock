@@ -22,6 +22,8 @@ import Courses from "./Components/Pages/Courses";
 import Indipage from "./Components/Pages/Indipage";
 
 import { Helmet, HelmetProvider } from "react-helmet-async";
+import Guitar from "./Components/Pages/Invidual_course_pages/Guitar";
+import Singing from "./Components/Pages/Invidual_course_pages/Singing";
 
 // import { SmoothProvider } from 'react-smooth-scrolling'
 
@@ -41,6 +43,8 @@ function App() {
             <Route path="/Courses" component={Courses} />
             <Route path="/Indipage" component={Indipage} />
             <Route path="/Contactus" component={Contactus} />
+            <Route path="/Guitar" component={Guitar} />
+            <Route path="/Singing" component={Singing} />
           </Switch>
           <Footer />
         </Router>

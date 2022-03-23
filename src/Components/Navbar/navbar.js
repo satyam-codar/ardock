@@ -19,7 +19,11 @@ const Navbar = () => {
           <h2>ARDOCK</h2>
         </div>
 
-        <div className={showMediaIcons ? "menu-link mobile-menu-link" : "menu-link"}>
+        <div
+          className={
+            showMediaIcons ? "menu-link mobile-menu-link" : "menu-link"
+          }
+        >
           <ul>
             <li>
               <NavLink to="/">Home</NavLink>
@@ -36,9 +40,12 @@ const Navbar = () => {
             <li>
               <NavLink to="/Contactus">contact</NavLink>
             </li>
+            {/* <li>
+              <NavLink to="/Guitar">Guitar</NavLink>
+            </li>
             <li>
-                <NavLink to="/Indipage">Guitar</NavLink>
-              </li>
+              <NavLink to="/Singing">Singing</NavLink>
+            </li> */}
             {/* <li>
               <NavLink to="/contact">Sign In </NavLink>
             </li>
@@ -52,7 +59,7 @@ const Navbar = () => {
         <div className="social-media">
           <div className="hamburger-menu">
             <a href="#" onClick={() => setShowMediaIcons(!showMediaIcons)}>
-              <GiHamburgerMenu size={40}/>
+              <GiHamburgerMenu size={40} />
             </a>
           </div>
         </div>

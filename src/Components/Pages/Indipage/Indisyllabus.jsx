@@ -13,13 +13,13 @@ function Syllabuscard(props) {
                     <div className="col-md-9 col-lg-9 col-sm-12">
                         <div className="syllcardtext">
                             <h1>
-                                Beginner Guitar Method - Stage 1
+                                {props.heading}
                             </h1>
                             <h2>
-                                30 Sessions | 16 days
+                                {props.number} Sessions | {props.time} days
                             </h2>
                             <p>
-                                In our Stage 1 course we show you the ropes and help you form a solid foundation you can build on for years to come. Unlike many other beginner courses that have you learning music theory for weeks before you get to play real music, this course gets you playing recognizable riffs in the first week. If you want the best start in guitar, this is it.
+                                {props.first_des} 
                             </p>
                         </div>
                     </div>
@@ -30,19 +30,21 @@ function Syllabuscard(props) {
 }
 
 
-function Indisyllabus() {
+function Indisyllabus(props) {
     return (
         <div className='indisyllabus'>
             <h1>
-                A Comprehensive 10 Part Guitar System
+                A Comprehensive {props.breakdown} 10 Part Guitar System
             </h1>
             <div className="content">
-                <Syllabuscard />
-                <Syllabuscard />
+
+                {props.program_breakdown.map((pile)=>(
+                    <>
+                    <Syllabuscard key={pile.sessions} heading={pile.first_head} time={pile.time_period} number={pile.sessions} first_des={pile.first_des}/>
+                    </>
+                ))}
+                
             </div>
-
-
-
         </div>
     )
 }

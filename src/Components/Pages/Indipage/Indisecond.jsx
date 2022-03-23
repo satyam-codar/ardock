@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Indisecond() {
+function Indisecond(props) {
     return (
         <div className='indisecond'>
             <div className="container">
@@ -11,10 +11,10 @@ function Indisecond() {
                                 Estimated time
                             </h2>
                             <h1>
-                                4 - 8 Weeks
+                                {props.Estimated_time} 4 - 8 Weeks
                             </h1>
                             <p>
-                                At 5 hours/week
+                                {props.speed}At 5 hours/week
                             </p>
                         </div>
                     </div>
@@ -25,10 +25,10 @@ function Indisecond() {
                                 ENROLL BY
                             </h2>
                             <h1>
-                                March 16, 2022
+                                {props.enroll_by} March 16, 2022
                             </h1>
                             <p>
-                                Get access to the classroom immediately upon enrollment
+                                {props.enroll_des} Get access to the classroom immediately upon enrollment
                             </p>
                         </div>
                     </div>
@@ -38,10 +38,10 @@ function Indisecond() {
                                 Taught By:
                             </h2>
                             <h1>
-                                Chris Eldridge
+                                {props.tutor} Chris Eldridge
                             </h1>
                             <p>
-                                Professional guitarist
+                                {props.tutor_des} Professional guitarist
                             </p>
                         </div>
                     </div>

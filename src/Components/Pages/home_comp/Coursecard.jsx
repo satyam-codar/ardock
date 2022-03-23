@@ -1,12 +1,11 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
 
-
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import {  CardActionArea, CardActions } from '@mui/material';
+import { CardActionArea, CardActions } from '@mui/material';
 
 
 import Stack from '@mui/material/Stack';
@@ -39,9 +38,11 @@ function MultiActionAreaCard(props) {
             <CardActions>
                 <div className="firstbut">
                     <Stack direction="row" spacing={2}>
-                        <Button color="secondary" className='cardbutton'>
-                            <Link to='#'>Read more</Link>
-                        </Button>
+                        <Link to={props.nav}>
+                            <Button color="secondary" className='cardbutton'>
+                                Read more
+                            </Button>
+                        </Link>
                     </Stack>
                 </div>
             </CardActions>
