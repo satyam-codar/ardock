@@ -14,7 +14,7 @@ import Button from '@mui/material/Button';
 import "./Home_com.css"
 function MultiActionAreaCard(props) {
     return (
-        <Card className='maincard' sx={{ maxWidth: 345 }}>
+        <Card className='maincard' >
             <CardActionArea className='maincard1' >
                 <CardMedia
                     className='cardmedia'

@@ -1,11 +1,10 @@
 // import logo from './logo.svg';
 import "./App.css";
-import React, { useEffect, Fragment } from "react";
+// import React, { useEffect, Fragment } from "react";
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  useLocation,
 } from "react-router-dom";
 import Navbar from "./Components/Navbar/navbar";
 
@@ -24,31 +23,58 @@ import Indipage from "./Components/Pages/Indipage";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import Guitar from "./Components/Pages/Invidual_course_pages/Guitar";
 import Singing from "./Components/Pages/Invidual_course_pages/Singing";
+import ScrollToTop from "./Components/Extracomp/ScrollToTop";
+import Whatsapp from "./Components/Extracomp/whatsup/whatsapp";
 
+import { Container } from "react-bootstrap";
+import { AuthProvider } from "../src/Components/Extracomp/firebase-auth/contexts/AuthContext";
+import PrivateRoute from "../src/Components/Extracomp/firebase-auth/components/PrivateRoute";
+import Dashboard from "../src/Components/Extracomp/firebase-auth/components/Dashboard";
+import UpdateProfile from "../src/Components/Extracomp/firebase-auth/components/UpdateProfile";
+import Signup from "../src/Components/Extracomp/firebase-auth/components/Signup";
+import LoginAuth from "../src/Components/Extracomp/firebase-auth/components/Login";
+import ForgotPassword from "../src/Components/Extracomp/firebase-auth/components/ForgotPassword";
 // import { SmoothProvider } from 'react-smooth-scrolling'
-
-
 
 function App() {
   return (
     <HelmetProvider>
       <div className="scrollbar scrollbar-night-fade">
-      {/* <SmoothProvider ease={0.3}> */}
+        {/* <SmoothProvider ease={0.3}> */}
         <Router>
-          <Navbar />
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/About" component={Aboutus} />
-            <Route path="/ourteam" component={Ourteam} />
-            <Route path="/Courses" component={Courses} />
-            <Route path="/Indipage" component={Indipage} />
-            <Route path="/Contactus" component={Contactus} />
-            <Route path="/Guitar" component={Guitar} />
-            <Route path="/Singing" component={Singing} />
-          </Switch>
-          <Footer />
+          <AuthProvider>
+            <Navbar />
+            <Whatsapp />
+            <ScrollToTop />
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route path="/About" component={Aboutus} />
+              <Route path="/ourteam" component={Ourteam} />
+              <Route path="/Courses" component={Courses} />
+              <Route path="/Indipage" component={Indipage} />
+              <Route path="/Contactus" component={Contactus} />
+              <Route path="/Guitar" component={Guitar} />
+              <Route path="/Singing" component={Singing} />
+
+              <Container
+                className="d-flex align-items-center justify-content-center"
+                style={{ minHeight: "100vh" }}
+              >
+                <div className="w-100" style={{ maxWidth: "400px" }}>
+                  {/* < PrivateRoute></PrivateRoute> */}
+                  <PrivateRoute exact path="/admin" component={Dashboard} />
+                  <PrivateRoute path="/admin/update-profile" component={UpdateProfile} />
+                  <Route path="/admin/signup" component={Signup} />
+                  <Route path="/admin/login" component={LoginAuth} />
+                  <Route path="/admin/Dashboard" component={Dashboard} />
+                  <Route path="/admin/forgot-password" component={ForgotPassword}/>
+                </div>
+              </Container>
+            </Switch>
+            <Footer />
+          </AuthProvider>
         </Router>
-      {/* </SmoothProvider> */}
+        {/* </SmoothProvider> */}
       </div>
     </HelmetProvider>
   );

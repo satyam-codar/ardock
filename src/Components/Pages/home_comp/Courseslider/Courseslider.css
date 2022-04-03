@@ -48,16 +48,54 @@
 
 @media screen and (max-width: 1130px) and (min-width: 500px) {
   .next {
-  right: -7%;
+  right: -6%;
   top: 50%;
 }
 
 .prev {
-  left: -7%;
+  left: -6%;
   top: 50%;
 }
 }
 @media screen and (max-width: 770px) and (min-width: 500px) {
+  .next {
+  right: -7%;
+  top: 50%;
+}
+.prev {
+  left: -7%;
+  top: 50%;
+}
+.arrow {
+  background-color: #fff;
+  position: absolute;
+  cursor: pointer;
+  z-index: 10;
+  padding: 8px;
+  border-radius:50%;
+  /* margin:0px 5px ; */
+}
+}
+@media screen and (max-width: 500px) and (min-width: 440px) {
+  .next {
+  right: -9%;
+  top: 50%;
+}
+.prev {
+  left: -9%;
+  top: 50%;
+}
+.arrow {
+  background-color: #fff;
+  position: absolute;
+  cursor: pointer;
+  z-index: 10;
+  padding: 5px;
+  border-radius:50%;
+  /* margin:0px 5px ; */
+}
+}
+@media screen and (max-width: 440px) and (min-width: 410px) {
   .next {
   right: -8%;
   top: 50%;
@@ -66,14 +104,32 @@
   left: -8%;
   top: 50%;
 }
+.arrow {
+  background-color: #fff;
+  position: absolute;
+  cursor: pointer;
+  z-index: 10;
+  padding: 5px;
+  border-radius:50%;
+  /* margin:0px 5px ; */
 }
-@media screen and (max-width: 500px) and (min-width: 420px) {
-  .next {
-  right: -5%;
+}
+@media screen and (max-width: 410px) and (min-width: 375px) {
+   .next {
+  right: -9%;
   top: 50%;
 }
 .prev {
-  left: -5%;
+  left: -9%;
   top: 50%;
+}
+.arrow {
+  background-color: #fff;
+  position: absolute;
+  cursor: pointer;
+  z-index: 10;
+  padding: 5px;
+  border-radius:50%;
+  /* margin:0px 5px ; */
 }
 }

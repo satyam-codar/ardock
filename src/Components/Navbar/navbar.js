@@ -1,14 +1,12 @@
 import React, { useState } from "react";
 import "./navbar.css";
 
-import {
-  FaFacebookSquare,
-  FaInstagramSquare,
-  FaYoutubeSquare,
-} from "react-icons/fa";
+import Stack from "@mui/material/Stack";
+import Button from "@mui/material/Button";
+
 import { GiHamburgerMenu } from "react-icons/gi";
 
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 const Navbar = () => {
   const [showMediaIcons, setShowMediaIcons] = useState(false);
@@ -39,6 +37,18 @@ const Navbar = () => {
             </li>
             <li>
               <NavLink to="/Contactus">contact</NavLink>
+            </li>
+            <li>
+              <NavLink to="/admin/login">
+                <Stack
+                  direction={{xs: "column", sm: "row", md: "row", lg: "row" }}
+                  spacing={1}
+                >
+                  <Button className="butoutlined" color="secondary">
+                    Login / Signup
+                  </Button>
+                </Stack>
+              </NavLink>
             </li>
             {/* <li>
               <NavLink to="/Guitar">Guitar</NavLink>

@@ -3,9 +3,16 @@ import ControlledAccordions from './Homeaccordian'
 
 function Indifaq() {
     return (
-        <div className='indifaq'>
-            <ControlledAccordions/>
-        </div>
+        <>
+            <div className="container homeaccor">
+                <div className='indifaq'>
+                    <div className="heading">
+                        <img src="/Images/FAQ.png" alt="scfasdfa" />
+                    </div>
+                    <ControlledAccordions />
+                </div>
+            </div>
+        </>
     )
 }
 

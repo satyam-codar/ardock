@@ -53,6 +53,18 @@ html {
   justify-content: space-around;
   align-items: center;
 }
+.main-nav  Button {
+  height: 3.8rem;
+  font-size: 1.2rem;
+  border: 1px solid;
+  border-radius: 55px;
+  padding: 10px 20px;
+  margin: 5px 5px;
+}
+.main-nav .butoutlined {
+  color: white !important;
+  background-color: #3a143f !important;
+}
 
 /* ----------- Grid part ends ----------------- */
 

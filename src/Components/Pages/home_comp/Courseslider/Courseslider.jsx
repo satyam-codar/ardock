@@ -60,8 +60,8 @@ function Courseslider() {
             <Slider {...settings} className="cardoo">
                 
                 {FeaturedCourses.map((course)=>(
-                    <div style={{ width: "360px" }}>
-                        <MultiActionAreaCard image={course.imageUrl} heading={course.title} description={course.description} nav={course.nav}/>
+                    <div style={{ width: "360px" }} className="pinky">
+                        <MultiActionAreaCard image={course.imageUrl} heading={course.title} description={course.description} nav={course.nav} className="multiaction"/>
                     </div>
                 ))
                 }
