@@ -1,11 +1,7 @@
 // import logo from './logo.svg';
 import "./App.css";
 // import React, { useEffect, Fragment } from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar/navbar";
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -60,14 +56,17 @@ function App() {
                 className="d-flex align-items-center justify-content-center"
                 style={{ minHeight: "100vh" }}
               >
-                <div className="w-100" style={{ maxWidth: "400px" }}>
+                <div className="w-50">
                   {/* < PrivateRoute></PrivateRoute> */}
-                  <PrivateRoute exact path="/admin" component={Dashboard} />
-                  <PrivateRoute path="/admin/update-profile" component={UpdateProfile} />
-                  <Route path="/admin/signup" component={Signup} />
-                  <Route path="/admin/login" component={LoginAuth} />
-                  <Route path="/admin/Dashboard" component={Dashboard} />
-                  <Route path="/admin/forgot-password" component={ForgotPassword}/>
+                  <PrivateRoute exact path="/profile" component={Dashboard} />
+                  <PrivateRoute
+                    path="/update-profile"
+                    component={UpdateProfile}
+                  />
+                  <Route path="/signup" component={Signup} />
+                  <Route path="/login" component={LoginAuth} />
+                  <Route path="/Dashboard" component={Dashboard} />
+                  <Route path="/forgot-password" component={ForgotPassword} />
                 </div>
               </Container>
             </Switch>

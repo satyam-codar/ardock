@@ -7,8 +7,11 @@ import Button from "@mui/material/Button";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 import { NavLink, Link } from "react-router-dom";
+import { useAuth } from "../Extracomp/firebase-auth/contexts/AuthContext.js";
 
 const Navbar = () => {
+  const { currentUser } = useAuth();
+  console.log("Hello from navbar", currentUser);
   const [showMediaIcons, setShowMediaIcons] = useState(false);
   return (
     <>
@@ -29,19 +32,24 @@ const Navbar = () => {
             <li>
               <NavLink to="/About">About us</NavLink>
             </li>
-            <li>
+            {/* <li>
               <NavLink to="/ourteam">Our team</NavLink>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <NavLink to="/Courses">Courses</NavLink>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <NavLink to="/Contactus">contact</NavLink>
-            </li>
-            <li>
-              <NavLink to="/admin/login">
+            </li> */}
+
+            {currentUser ? (
+              <li>
+                <NavLink to="/profile">Profile</NavLink>
+              </li>
+            ) : (
+              <NavLink to="/login">
                 <Stack
-                  direction={{xs: "column", sm: "row", md: "row", lg: "row" }}
+                  direction={{ xs: "column", sm: "row", md: "row", lg: "row" }}
                   spacing={1}
                 >
                   <Button className="butoutlined" color="secondary">
@@ -49,6 +57,26 @@ const Navbar = () => {
                   </Button>
                 </Stack>
               </NavLink>
+            )}
+            <li>
+              {/* <NavLink to="/login">
+                <Stack
+                  direction={{ xs: "column", sm: "row", md: "row", lg: "row" }}
+                  spacing={1}
+                >
+                  {currentUser && currentUser.email === "admin@test.com" ? (
+                  
+                    <p>Fuck</p>
+                  ) : (
+                    <Button className="butoutlined" color="secondary">
+                      Login / Signup
+                    </Button>
+                  )}
+                  <Button className="butoutlined" color="secondary">
+                    Login / Signup
+                  </Button>
+                </Stack>
+              </NavLink> */}
             </li>
             {/* <li>
               <NavLink to="/Guitar">Guitar</NavLink>

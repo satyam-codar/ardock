@@ -1,6 +1,11 @@
 import React, { useContext, useState, useEffect } from "react";
 import { auth } from "../firebase/config";
-
+import {
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  sendPasswordResetEmail,
+  sendEmailVerification,
+} from "firebase/auth";
 const AuthContext = React.createContext();
 
 export function useAuth() {
@@ -14,11 +19,12 @@ export function AuthProvider({ children }) {
   function signup(email, password) {
     console.log(email, password);
     // console.log(auth.createUserWithEmailAndPassword(email, password));
-    return auth.createUserWithEmailAndPassword(email, password);
+    return createUserWithEmailAndPassword(auth, email, password);
+    // return auth.createUserWithEmailAndPassword(email, password);
   }
 
   function login(email, password) {
-    return auth.signInWithEmailAndPassword(email, password);
+    return signInWithEmailAndPassword(auth, email, password);
   }
 
   function logout() {
@@ -26,7 +32,18 @@ export function AuthProvider({ children }) {
   }
 
   function resetPassword(email) {
-    return auth.sendPasswordResetEmail(email);
+    const resetPass = sendPasswordResetEmail(auth, email)
+      .then(() => {
+        // Password reset email sent!
+        // ..
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        // ..
+      });
+    return resetPass;
+    // return auth.sendPasswordResetEmail(email);
   }
 
   function updateEmail(email) {

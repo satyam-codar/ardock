@@ -2,6 +2,11 @@ import React, { useRef, useState } from "react";
 import { Form, Button, Card, Alert } from "react-bootstrap";
 import { useAuth } from "../contexts/AuthContext";
 import { Link, useHistory } from "react-router-dom";
+import { getAuth, sendEmailVerification } from "firebase/auth";
+import { auth } from "../firebase/config";
+import { GoogleAuthProvider, signInWithRedirect } from "firebase/auth";
+
+const provider = new GoogleAuthProvider();
 
 export default function Signup() {
   const emailRef = useRef();
@@ -25,6 +30,13 @@ export default function Signup() {
       console.log(emailRef.current.value);
       console.log(passwordRef.current.value);
       await signup(emailRef.current.value, passwordRef.current.value);
+      await sendEmailVerification(auth.currentUser).then(() => {
+        // Email verification sent!
+        alert(
+          "An email has been sent to you. Please verify and login again to view your profile."
+        );
+      });
+
       history.push("/");
     } catch {
       setError("Failed to create an account");
@@ -32,6 +44,31 @@ export default function Signup() {
 
     setLoading(false);
   }
+
+  // Sign up with google account
+  const signinWithGoogle = () => {
+    try {
+      signInWithRedirect(auth, provider).catch(alert);
+      history.push("/");
+    } catch {
+      setError("Failed to create an account");
+    }
+  };
+  // async function signinWithGoogle(e) {
+  //   e.preventDefault();
+  //   try {
+  //     setError("");
+  //     setLoading(true);
+  //     await signInWithRedirect(auth, provider).catch(alert);
+  //     console.log("hi there signinWithGoogle");
+
+  //     history.push("/");
+  //     console.log("hi there signinWithGoogle2");
+  //   } catch {
+  //     setError("Failed to create an account");
+  //   }
+  //   setLoading(false);
+  // }
 
   return (
     <>
@@ -59,7 +96,20 @@ export default function Signup() {
         </Card.Body>
       </Card>
       <div className="w-100 text-center mt-2">
-        Already have an account? <Link to="admin/login">Log In</Link>
+        Already have an account? <Link to="/login">Log In</Link>
+      </div>
+      <br />
+      <h3>OR</h3>
+      <div>
+        <center>
+          <button
+            type="button"
+            class="btn btn-outline-primary"
+            onClick={signinWithGoogle}
+          >
+            Sign In with Google
+          </button>
+        </center>
       </div>
     </>
   );
